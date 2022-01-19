@@ -1,0 +1,49 @@
+---
+title: "Features"
+output:
+  html_document:
+    include:
+      in_header: ./html/header_features.html
+---
+
+***
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE)
+
+library(tidyverse)
+library(DT)
+
+dtable <- read_tsv("./data/features.csv")  # table with features
+tdtable <- read_tsv("./data/topics.csv")  #table with topics
+
+colnames(tdtable) <- c('major_topic', 'topic_author', 'topic_filename')
+full_join(dtable, tdtable)->dtable
+
+dtable %>% 
+  filter(filename != 'in progress') %>% 
+  mutate(area = factor(area)) %>% 
+  mutate(major_topic = factor(major_topic)) -> dtable
+
+#add links to the titles
+dtable %>% 
+  mutate(feature = paste(title, '<br>', '<a href=', filename, '.html>', 'Chapter', '</a>', '|',
+                         '<a href=', filename, '_map.html>', 'Maps&Data', '</a>', 
+                         sep = '')) %>%
+  mutate(major_topic = ifelse(!is.na(topic_filename), paste('<a href=', topic_filename, '.html>', major_topic, '</a>', sep = ''), '')) %>%
+  select(c(feature, author, major_topic, area))-> dtable
+
+```
+``` {r}
+# generate searchable datatable
+DT::datatable(dtable,
+              filter = 'top', 
+              escape = FALSE, 
+              rownames = FALSE,
+              options = list(
+                pageLength = 150, 
+                autoWidth = TRUE,
+                dom = 'fltpi')
+              )
+```
+
+***

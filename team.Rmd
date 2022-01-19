@@ -1,0 +1,29 @@
+---
+title: "Team"
+output:
+  html_document:
+    include:
+      in_header: ./html/header_team.html
+---
+
+***
+
+The project was designed by [Michael Daniel](https://www.hse.ru/en/staff/michael_daniel), [Konstantin Filatov](https://www.hse.ru/en/org/persons/190921062), [George Moroz](https://www.hse.ru/en/org/persons/103489498), [Timofey Mukhin](https://www.hse.ru/en/org/persons/208514310), [Chiara Naccarato](https://www.hse.ru/en/org/persons/224233250), and [Samira Verhees](https://www.hse.ru/en/staff/samiraverhees).
+
+[Chiara Naccarato](https://www.hse.ru/en/org/persons/224233250) and [Samira Verhees](https://www.hse.ru/en/staff/samiraverhees) coordinate the workshop for students.
+
+[The TALD project](https://ilcl.hse.ru/en/projects/) would not have been realized in its present form without the advice and assistance of a number of people.
+
+Our consultants are: Marina Chumakina, [Nina Dobrushina](https://www.hse.ru/en/staff/dobrushina), Steven Kaye, [Yuri Koryakov](https://www.hse.ru/org/persons/318659932), [Timur Maisak](https://www.hse.ru/en/staff/maisak), [Aigul Zakirova](https://www.hse.ru/en/org/persons/190888832).
+
+People who have contributed to the atlas in the past or are currently working on a topic include: Denis Arsentjev, Katerina Dagkou, [Nina Dobrushina](https://www.hse.ru/en/staff/dobrushina), Fyodor Golosov, Violetta Ivanova, Daria Izmalkova, Inga Kartozia, [Evgeniya Klyagina](https://www.hse.ru/org/persons/224839526), [Timur Maisak](https://www.hse.ru/en/staff/maisak), Maksim Melenchenko, [George Moroz](https://www.hse.ru/en/org/persons/103489498), [Timofey Mukhin](https://www.hse.ru/en/org/persons/208514310), [Polina Nasledskova](https://www.hse.ru/en/org/persons/190905106), [Ivan Netkachev](https://www.hse.ru/org/persons/190905500), [Aleksandra Nogina](https://www.hse.ru/org/persons/225564007), Rita Popova, Varvara Popova, Samira Ochs, [Anastasia Panova](https://www.hse.ru/en/staff/apanova), [Tatiana Philippova](https://www.hse.ru/en/org/persons/224290572), Sara Zadykian.
+
+[Timofey Mukhin](language.html) is responsible for the TALD website.
+
+Photos presented on the site are taken by [Michael Daniel](https://www.hse.ru/en/staff/michael_daniel), [Konstantin Filatov](https://www.hse.ru/en/org/persons/190921062), [Timur Maisak](https://www.hse.ru/en/staff/maisak), and [Timofey Mukhin](https://www.hse.ru/en/org/persons/208514310).
+
+## Contact us
+
+You can always contact us via email at <cauatlas@gmail.com> or leave an issue on the [GitHub page](https://github.com/LingConLab/TALD).
+
+***

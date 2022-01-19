@@ -1,0 +1,33 @@
+---
+title: "Changes"
+output:
+  html_document:
+    include:
+      in_header: ./html/header_changes.html
+---
+
+***
+#### January 2021
+
+New feature chapters added:
+
+- Number of agreement classes
+- Presence of Affective
+- Evidentiality as part of the tense system
+- Gemination
+- System of laterals
+- Presence of voiced uvular stop
+- Presence of nasalization
+- Presence of pharyngealization
+- Elevation in the demonstrative system
+- Distance contrasts expressed by demonstratives
+- Types of demonstrative systems
+- Standard of comparison
+- Perfect
+- Particles of reported speech and inference
+
+New major topics added:
+
+- Evidentiality
+
+***
