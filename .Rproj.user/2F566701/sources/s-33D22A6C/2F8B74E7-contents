@@ -1,0 +1,71 @@
+
+---------------------------------------
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE}
+source('../R/features_maker.R')
+yml_header_params_list <- yml_header_params(feature_id)
+
+author = yml_header_params_list$author
+cdate = yml_header_params_list$cdate
+title = yml_header_params_list$title
+author_bib = yml_header_params_list$author_bib
+```
+
+# {.tabset .tabset-fade .tabset-pills} 
+
+## Cite (text)
+
+<!--html_preserve-->
+<script>
+function copytext(el) {
+    var $tmp = $("<textarea>");
+    $("body").append($tmp);
+    $tmp.val($(el).text()).select();
+    document.execCommand("copy");
+    $tmp.remove();
+}    
+</script>
+<button class="copybutt" onclick="copytext('#cite1')"><span><i class="fas fa-copy"></i></span></button>
+<div id="cite1">
+<!--/html_preserve-->
+
+`r author`. (`r cdate`). "`r title`." In: _Typological Atlas of the languages of Daghestan (TALD)_. Ed. by Daniel, Michael, Konstantin Filatov, George Moroz, Timofey Mukhin, Chiara Naccarato, and Samira Verhees. (2020). Moscow: Linguistic Convergence Laboratory, HSE University. URL: http://lingconlab.ru/dagatlas. Accessed on <!--html_preserve--><span id="currentDate"></span>
+</div>
+<script>
+  var today = new Date();
+  var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate() + '.';
+  document.getElementById("currentDate").innerHTML = date;
+</script>
+<!--/html_preserve-->
+
+## Cite (BibTeX)
+
+<!--html_preserve-->
+<button class="copybutt" onclick="copytext('#cite2')"><span><i class="fas fa-copy"></i></span></button>
+<div id="cite2">
+<!--/html_preserve-->
+
+```{r include=FALSE}
+library(RefManageR)
+
+BibEntry(bibtype = 'Incollection', 
+         key=paste0(feature_id, cdate), 
+         title=title, 
+         author=author_bib, 
+         year=cdate,
+         editor= 'Daniel, Michael  and Filatov, Konstantin and Moroz, George and Mukhin, Timofey and Naccarato, Chiara and Verhees, Samira',
+         publisher='Linguistic Convergence Laboratory, NRU HSE', 
+         address='Moscow', 
+         booktitle= 'Typological Atlas of the languages of Daghestan (TALD)', 
+         url='http://lingconlab.ru/dagatlas') -> be
+```
+
+```{r comment=''}
+print(be, .opts = list(style = "Bibtex"))
+```
+
+<!--html_preserve-->
+</div>
+<!--/html_preserve-->
+
+# {-}
