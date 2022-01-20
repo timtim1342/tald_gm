@@ -4,20 +4,17 @@ author: Timofey Mukhin
 date: 'Last update: November 2020'
 bibliography: ./data/orig_bib/types_of_demonstrative_systems.bib
 csl: ./data/apa.csl
-output:
-  html_document:
-    css: style.css
 ---
 
 ```{r, include = FALSE}
-knitr::opts_chunk$set(echo = FALSE, message = FALSE, comment = "")
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, comment = '')
 ```
 
 ```{r, child='data/orig_rmd/types_of_demonstrative_systems.Rmd'}
 ```
 
 ```{r}
-art_citation <- RefManageR::BibEntry(bibtype = 'Incollection', 
+article_citation <- RefManageR::BibEntry(bibtype = 'Incollection', 
  key='mukhin2020',
  title='Types of demonstrative systems',
  author='Timofey Mukhin',
@@ -32,14 +29,18 @@ art_citation <- RefManageR::BibEntry(bibtype = 'Incollection',
 ## {.tabset .tabset-fade .tabset-pills} 
 ### Plain text
 
-```{r, results='asis'}
-print(art_citation, .opts = list(style = 'text'))
+```{r, results = 'asis'}
+print(article_citation, .opts = list(style = 'text'))
 ```
 
 ### BibTeX
 
 ```{r}
-print(art_citation, .opts = list(style = 'Bibtex'))
+klippy::klippy(position = c('top', 'right'))
+```
+
+```{r}
+print(article_citation, .opts = list(style = 'Bibtex'))
 ```
 
 ## References

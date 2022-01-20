@@ -1,26 +1,23 @@
 ---
-title: Types of demonstrative systems
-author: Timofey Mukhin
+title: Standard of comparison
+author: Chiara Naccarato
 date: 'Last update: November 2020'
-bibliography: ./data/orig_bib/types_of_demonstrative_systems.bib
+bibliography: ./data/orig_bib/standard_of_comparison.bib
 csl: ./data/apa.csl
-output:
-  html_document:
-    css: style.css
 ---
 
 ```{r, include = FALSE}
-knitr::opts_chunk$set(echo = FALSE, message = FALSE)
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, comment = '')
 ```
 
-```{r, child='data/orig_rmd/types_of_demonstrative_systems.Rmd'}
+```{r, child='data/orig_rmd/standard_of_comparison.Rmd'}
 ```
 
 ```{r}
-citation <- RefManageR::BibEntry(bibtype = 'Incollection', 
- key='mukhin2020',
- title='Types of demonstrative systems',
- author='Timofey Mukhin',
+article_citation <- RefManageR::BibEntry(bibtype = 'Incollection', 
+ key='naccarato2020',
+ title='Standard of comparison',
+ author='Chiara Naccarato',
  year='2020',
  editor= 'Daniel, Michael  and Filatov, Konstantin and Moroz, George and Mukhin, Timofey and Naccarato, Chiara and Verhees, Samira',
  publisher='Linguistic Convergence Laboratory, NRU HSE',
@@ -32,14 +29,14 @@ citation <- RefManageR::BibEntry(bibtype = 'Incollection',
 ## {.tabset .tabset-fade .tabset-pills} 
 ### Plain text
 
-```{r}
-print(citation)
+```{r, results = 'asis'}
+print(article_citation, .opts = list(style = 'text'))
 ```
 
 ### BibTeX
 
 ```{r}
-print(citation, .opts = list(style = 'Bibtex'))
+print(article_citation, .opts = list(style = 'Bibtex'))
 ```
 
 ## References

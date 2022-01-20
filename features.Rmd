@@ -17,16 +17,17 @@ dtable <- read_tsv("./data/features.csv")  # table with features
 tdtable <- read_tsv("./data/topics.csv")  #table with topics
 
 colnames(tdtable) <- c('major_topic', 'topic_author', 'topic_filename')
-full_join(dtable, tdtable)->dtable
-
-dtable %>% 
+full_join(dtable, tdtable) %>% 
   filter(filename != 'in progress') %>% 
   mutate(area = factor(area)) %>% 
-  mutate(major_topic = factor(major_topic)) -> dtable
+  mutate(major_topic = factor(major_topic)) -> 
+  dtable
 
 #add links to the titles
 dtable %>% 
-  mutate(feature = paste(title, '<br>', '<a href=', filename, '.html>', 'Chapter', '</a>', '|',
+  mutate(filename = paste0(sprintf(paste0("%0", nchar(length(id)), "d_"), seq_along(id)),
+                           filename),
+         feature = paste(title, '<br>', '<a href=', filename, '.html>', 'Chapter', '</a>', '|',
                          '<a href=', filename, '_map.html>', 'Maps&Data', '</a>', 
                          sep = '')) %>%
   mutate(major_topic = ifelse(!is.na(topic_filename), paste('<a href=', topic_filename, '.html>', major_topic, '</a>', sep = ''), '')) %>%
