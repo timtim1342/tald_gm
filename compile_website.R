@@ -17,20 +17,21 @@ features <- read_tsv("data/features.csv",
 features$id_0 <- sprintf(paste0("%0", nchar(length(features$id)), "d_"), 
                          seq_along(features$id))
 
-
 # create Rmd names ---------------------------------------------------------
 rmd_filenames <- paste0(features$id_0, features$filename, ".Rmd")
+rmd_map_filenames <- paste0(features$id_0, features$filename, "_map.Rmd")
 
 # create key for bibtex ----------------------------------------------------
 first_authors <- tolower(str_remove(map(str_split(features$author, " "), 2), ","))
 
 # create Rmd files ---------------------------------------------------------
-map(seq_along(rmd_filenames), function(i){
-  options(ymlthis.rmd_body = "
+options(ymlthis.rmd_body = "
 ```{r, include = FALSE}
 knitr::opts_chunk$set(echo = FALSE, message = FALSE, comment = '')
 ```
 ")
+
+map(seq_along(rmd_filenames), function(i){
   ymlthis::yml_empty() %>% 
     ymlthis::yml_title(features$title[i]) %>% 
     ymlthis::yml_author(features$author[i]) %>% 
@@ -44,38 +45,40 @@ knitr::opts_chunk$set(echo = FALSE, message = FALSE, comment = '')
                            quiet = TRUE,
                            include_body = FALSE,
                            body = NULL) 
-    write_lines(c(paste0("```{r, child='data/orig_rmd/", features$filename[i], ".Rmd'}"),
-                "```",
-                "",
-                "```{r}",
-                "article_citation <- RefManageR::BibEntry(bibtype = 'Incollection', ",
-                paste0(" key='", first_authors[i], features$created_date[i], "',"),
-                paste0(" title='", features$title[i], "',"),
-                paste0(" author='", features$author[i], "',"),
-                paste0(" year='", features$created_date[i], "',"),
-                " editor= 'Daniel, Michael  and Filatov, Konstantin and Moroz, George and Mukhin, Timofey and Naccarato, Chiara and Verhees, Samira',",
-                " publisher='Linguistic Convergence Laboratory, NRU HSE',",
-                " address='Moscow',",
-                " booktitle= 'Typological Atlas of the languages of Daghestan (TALD)',",
-                " url='http://lingconlab.ru/dagatlas')",
-                "```",
-                "",
-                "## {.tabset .tabset-fade .tabset-pills} ",
-                "### Plain text",
-                "",
-                "```{r, results = 'asis'}",
-                "print(article_citation, .opts = list(style = 'text'))", # deal with the [1]!
-                "```",
-                "",
-                "### BibTeX",
-                "",
-                "```{r}",
-                "print(article_citation, .opts = list(style = 'Bibtex'))",
-                "```",
-                "",
-                "## References"),
-              rmd_filenames[i], append = TRUE)
-  
+  write_lines(c(
+    paste0("See [data and maps](", features$filename[i], "_map.html)."),
+    "",
+    paste0("```{r, child='data/orig_rmd/", features$filename[i], ".Rmd'}"),
+    "```",
+    "",
+    "```{r}",
+    "article_citation <- RefManageR::BibEntry(bibtype = 'Incollection', ",
+    paste0(" key='", first_authors[i], features$created_date[i], "',"),
+    paste0(" title='", features$title[i], "',"),
+    paste0(" author='", features$author[i], "',"),
+    paste0(" year='", features$created_date[i], "',"),
+    " editor= 'Daniel, Michael  and Filatov, Konstantin and Moroz, George and Mukhin, Timofey and Naccarato, Chiara and Verhees, Samira',",
+    " publisher='Linguistic Convergence Laboratory, NRU HSE',",
+    " address='Moscow',",
+    " booktitle= 'Typological Atlas of the languages of Daghestan (TALD)',",
+    " url='http://lingconlab.ru/dagatlas')",
+    "```",
+    "",
+    "## {.tabset .tabset-fade .tabset-pills} ",
+    "### Plain text",
+    "",
+    "```{r, results = 'asis'}",
+    "print(article_citation, .opts = list(style = 'text'))", # deal with the [1]!
+    "```",
+    "",
+    "### BibTeX",
+    "",
+    "```{r}",
+    "print(article_citation, .opts = list(style = 'Bibtex'))",
+    "```",
+    "",
+    "## References"),
+    rmd_filenames[i], append = TRUE)
 })
 
 # RENDER AND CLEAN ---------------------------------------------------------

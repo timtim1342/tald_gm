@@ -1,21 +1,24 @@
 suppressPackageStartupMessages(library(tidyverse))
 library(testthat)
 
-# TESTS --------------------------------------------------------------------
-# I expect all files in orig_table, orig_rmd and orig_bib have the same names
-test_that("test number and file names", {
-  expect_equal(str_remove(list.files("data/orig_table"), ".tsv"), 
-               str_remove(list.files("data/orig_rmd"), ".Rmd"))
-  expect_equal(str_remove(list.files("data/orig_table"), ".tsv"),
-               str_remove(list.files("data/orig_bib"), ".bib"))
+test_that("Test number and file names in orig folders:
+I expect all files in orig_table, orig_rmd and orig_bib have the same 
+names as in the `data/features.csv`", {
+  read_tsv("data/features.csv", progress = FALSE, show_col_types = FALSE) %>% 
+    pull(filename) %>% 
+    sort() ->
+    expected
+  
+  expect_equal(list.files("data/orig_table"), str_c(expected, ".tsv"))
+  expect_equal(list.files("data/orig_rmd"), str_c(expected, ".Rmd"))
+  expect_equal(list.files("data/orig_bib"), str_c(expected, ".bib"))
 })
 
-# I expect that the h1 header `# ` is present in rmd files just once.
-test_that("test wrong hashes in rmarkdown text", {
+test_that("Test hashes in rmarkdown text:
+I expect that the h1 header `#` is absent in Rmd files.", {
   
   n_wrong_hashes <- map_dbl(list.files("data/orig_rmd", full.names = TRUE), function(rmd){
-    # there should be just one hash in '# Chapter'
-    sum(str_detect(read_lines(rmd, progress = FALSE), "^# "))  - 1 
+    sum(str_detect(read_lines(rmd, progress = FALSE), "^# ")) 
   })
   
   observed <- str_c(file = list.files("data/orig_rmd"), 
@@ -28,10 +31,9 @@ test_that("test wrong hashes in rmarkdown text", {
   expect_equal(observed, expected)
 })
 
-# I expect that each file in `data/orig_table` is in tsv and have columns 
-# listed in `expected_columns`
-
-test_that("test column names and separator in data", {
+test_that("Test column names and separator in data:
+I expect that each file in `data/orig_table` is in `.tsv` format and have 
+columns listed in `expected_columns`", {
   expected_columns <- c("id", 
                         "lang", 
                         "idiom", 
@@ -39,8 +41,6 @@ test_that("test column names and separator in data", {
                         "genlang_point", 
                         "map", 
                         "feature", 
-                        "value1", 
-                        "value1_name", 
                         "source", 
                         "page", 
                         "comment", 
@@ -75,10 +75,9 @@ test_that("test column names and separator in data", {
   expect_equal(check_col_names$observed, check_col_names$expected)
 })
 
-# I expect that all languages in the `lang` field of tables in `data/orig_table`
-# match with `data/genlangpoints.csv`
-
-test_that("Those are wrong languages", {
+test_that("Test for wrong languages:
+I expect that all languages in the `lang` field of tables in `data/orig_table`
+match with `data/genlangpoints.csv`", {
   read_tsv("data/genlangpoints.csv",
            progress = FALSE, 
            show_col_types = FALSE) %>% 
@@ -88,7 +87,9 @@ test_that("Those are wrong languages", {
     expected_langs
   
   observed <- map_chr(list.files("data/orig_table", full.names = TRUE), function(table){
-    read_tsv(table) %>% 
+    read_tsv(table,
+             progress = FALSE, 
+             show_col_types = FALSE) %>% 
       distinct(lang) %>% 
       pull(lang) ->
       langs_from_table

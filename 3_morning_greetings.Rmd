@@ -10,6 +10,8 @@ csl: ./data/apa.csl
 knitr::opts_chunk$set(echo = FALSE, message = FALSE, comment = '')
 ```
 
+See [data and maps](morning_greetings_map.html).
+
 ```{r, child='data/orig_rmd/morning_greetings.Rmd'}
 ```
 

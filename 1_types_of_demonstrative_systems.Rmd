@@ -10,6 +10,8 @@ csl: ./data/apa.csl
 knitr::opts_chunk$set(echo = FALSE, message = FALSE, comment = '')
 ```
 
+See [data and maps](types_of_demonstrative_systems_map.html).
+
 ```{r, child='data/orig_rmd/types_of_demonstrative_systems.Rmd'}
 ```
 
@@ -34,10 +36,6 @@ print(article_citation, .opts = list(style = 'text'))
 ```
 
 ### BibTeX
-
-```{r}
-klippy::klippy(position = c('top', 'right'))
-```
 
 ```{r}
 print(article_citation, .opts = list(style = 'Bibtex'))
