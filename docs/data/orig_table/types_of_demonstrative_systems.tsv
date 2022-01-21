@@ -1,0 +1,56 @@
+id	lang	idiom	type	genlang_point	map	feature	value	source	page	comment	contributor
+1	Agul	Agul	language	yes	yes	The type of a demonstrative system	polycentric	maisak2014	400	ТА говорит, что везде так	Timofey Mukhin
+2	Akhvakh	Tad-Magitl’	village	yes	yes	The type of a demonstrative system	polycentric	magomedovaabdulaeva2007	681-682	NA	Timofey Mukhin
+3	Andi	Upper Andi	dialect_toplevel	yes	yes	The type of a demonstrative system	polycentric	sulejmanov1957	323-328	'приводит формы, но не сводит их к основам и показателям (столбец stems-додумка). судя по схеме выше/ниже нет у ''ближе к 1-му лицу'', у ''ближе 3-му лицу'' (а может еще у кого) нет немаркированной по высоте формы'	Timofey Mukhin
+4	Andi	Zilo	village	no	yes	The type of a demonstrative system	polycentric	kayeetaldraft2020	12-13	of which the latter refers to objects that are relatively further away- про все дистальные формы или только одну? 4 степени удаленности? что за distal, от кого? только к medial и distal по высоте	Timofey Mukhin
+5	Archi	Archib	village	yes	yes	The type of a demonstrative system	polycentric	kibrik1977	124	NA	Timofey Mukhin
+6	Armenian	Eastern Armenian	dialect_toplevel	yes	yes	The type of a demonstrative system	polycentric	dum-tragut2009	123129	NA	Timofey Mukhin
+7	Avar	Standard Avar	language	yes	yes	The type of a demonstrative system	polycentric	forkerdraft2020	7	NA	Timofey Mukhin
+8	Azerbaijani	Standard Azerbaijani	language	yes	yes	The type of a demonstrative system	monocentric	shiralievsevortyan1971	79,82	есть еще какой-то hemen (наш). но как он встроен в парадигму не ясно	Timofey Mukhin
+9	Bagvalal	Kvanada	village	no	yes	The type of a demonstrative system	monocentric	kibrik2001	161, 658, 670	непонятно насколько она не p-o. в толковании дальнего д есть слушающий, а так нигде нет. в чем разница между удаленными. на с 161 наречия do. а может и нет (с 658) +ТАБЛИЧКА НА СТР 670!	Timofey Mukhin
+10	Bagvalal	Bagvalal	language	yes	yes	The type of a demonstrative system	polycentric	magometova2004	579-580	e семантика не написана	Timofey Mukhin
+11	Bezhta	Bezhta	village	no	no	The type of a demonstrative system	monocentric	madieva1965	98,1	видимость?	Timofey Mukhin
+12	Bezhta	Bezhta	language	yes	yes	The type of a demonstrative system	polycentric	comrieetal2015	302	ва- маркирует видимость! может отдельно отмечать	Timofey Mukhin
+13	Botlikh	Botlikh	language	no	no	The type of a demonstrative system	polycentric	khalidova2017	78	есть вертикальность, но нет форм	Timofey Mukhin
+14	Botlikh	Botlikh	village	yes	yes	The type of a demonstrative system	polycentric	alexeyevverheesdraft2020	9	надо решить какое описание выбрать, а то там сказано сильно разное. что значит a little to the side? и вообще что это за система???	Timofey Mukhin
+15	Budukh	Budukh	village	yes	yes	The type of a demonstrative system	monocentric	talibov2007	121-122	не очень про значение. что за сбоку?	Timofey Mukhin
+16	Chamalal	Lower Gakvari	village	yes	yes	The type of a demonstrative system	polycentric	magomedova1999	423	NA	Timofey Mukhin
+17	Chechen	Standard Chechen	language	yes	yes	The type of a demonstrative system	monocentric	nichols1994	34	NA	Timofey Mukhin
+18	Dargwa	Standard Dargwa	language	no	no	The type of a demonstrative system	polycentric	musaev2002	63	(у участников речи) это что?	Timofey Mukhin
+19	Dargwa	Kubachi	village	no	yes	The type of a demonstrative system	polycentric	magometov1963	139143	NA	Timofey Mukhin
+20	Dargwa	Akusha	dialect_nt1	yes	yes	The type of a demonstrative system	polycentric	abdullaev1954	139-140	NA	Timofey Mukhin
+21	Dargwa	Itsari	village	no	yes	The type of a demonstrative system	polycentric	sumbatovamutalov2003	37	стороны света?	Timofey Mukhin
+22	Dargwa	Tanty	village	no	yes	The type of a demonstrative system	polycentric	sumbatovalander2014	76-77	NA	Timofey Mukhin
+23	Georgian	Standard Georgian	language	yes	yes	The type of a demonstrative system	polycentric	hewitt2005	18	NA	Timofey Mukhin
+24	Godoberi	Godoberi	village	yes	yes	The type of a demonstrative system	polycentric	kibriketal1996	37,42	кажется ядро составляют ha,hu,ho, причем ho записан как анафорическое, а далее+как far away. есть только that down ther/ aside.	Timofey Mukhin
+25	Hinuq	Hinuq	village	yes	yes	The type of a demonstrative system	monocentric	forker2013	132-140	разные серии дейктические и анафорические. если для разных функций своя серия (сохраняющая исконное дейктическое противопоставление), то это немного необычно, нет?	Timofey Mukhin
+26	Hunzib	Hunzib	language	yes	yes	The type of a demonstrative system	polycentric	vandenberg1995	60-61	специальный анафорический префикс?	Timofey Mukhin
+27	Ingush	Standard Ingush	language	yes	yes	The type of a demonstrative system	monocentric	nichols2011	173, 178, 658	NA	Timofey Mukhin
+28	Karata	Karata	dialect_toplevel	no	no	The type of a demonstrative system	monocentric	magomedbekova1971	104	NA	Timofey Mukhin
+29	Karata	Karata	village	yes	yes	The type of a demonstrative system	monocentric	pasquereaudraft2020	16	NA	Timofey Mukhin
+30	Khinalug	Khinalug	village	yes	yes	The type of a demonstrative system	monocentric	kibriketal1972	74,77	что-то про контактную близость. какие-то самостоятельные/несамостоятельные формы. не супер понятно	Timofey Mukhin
+31	Khinalug	Khinalug	village	no	no	The type of a demonstrative system	ND	desheriev1959	123196	NA	Timofey Mukhin
+32	Khwarshi	Kwantlada	village	yes	yes	The type of a demonstrative system	monocentric	khalilova2009	143	NA	Timofey Mukhin
+33	Kryz	Alik	village	yes	yes	The type of a demonstrative system	polycentric	authier2009	59-61	NA	Timofey Mukhin
+34	Kumyk	Standard Kumyk	language	no	no	The type of a demonstrative system	monocentric	abdullaevaetal2014	252-255	NA	Timofey Mukhin
+35	Kumyk	Standard Kumyk	language	yes	yes	The type of a demonstrative system	monocentric	dmitriev1940	77-79	+ известность	Timofey Mukhin
+36	Lak	Standard Lak	language	yes	yes	The type of a demonstrative system	polycentric	zhirkov1955	62,71	га- тот ниже. значение ниже сильно ослаблено. нейтральный?	Timofey Mukhin
+37	Lezgian	Standard Lezgian	language	yes	yes	The type of a demonstrative system	monocentric	Haspelmath1993	184,19	NA	Timofey Mukhin
+38	Nogai	Standart Nogai	language	no	no	The type of a demonstrative system	monocentric	baskakov1997	332	NA	Timofey Mukhin
+39	Nogai	Nogai proper	language	yes	yes	The type of a demonstrative system	monocentric	baskakov1940	74,77	NA	Timofey Mukhin
+40	Rutul	Mukhad	dialect_toplevel	yes	yes	The type of a demonstrative system	polycentric	maxmudova2002	187	NA	Timofey Mukhin
+41	Tabasaran	Standard Tabasaran	language	no	no	The type of a demonstrative system	monocentric	alekseevshixalieva2003	57-58	NA	Timofey Mukhin
+42	Tabasaran	Northern Tabasaran	dialect_toplevel	no	no	The type of a demonstrative system	monocentric	magometov1965	176178	NA	Timofey Mukhin
+43	Tabasaran	Standard Tabasaran	language	yes	yes	The type of a demonstrative system	polycentric	uslar1979	135-136	NA	Timofey Mukhin
+44	Tat	Judeo-Tat	dialect_toplevel	yes	yes	The type of a demonstrative system	monocentric	authier2012	114-115	NA	Timofey Mukhin
+45	Tindi	Tindi	village	yes	yes	The type of a demonstrative system	polycentric	magomedova2012	126	NA	Timofey Mukhin
+46	Tindi	Tindi	village	no	no	The type of a demonstrative system	monocentric	authierdraft2020	10-11	у магомедовой po	Timofey Mukhin
+47	Tsakhur	Mishlesh	village	yes	yes	The type of a demonstrative system	monocentric	kibrik1999	131; 133	NA	Timofey Mukhin
+48	Tsakhur	Tsakhur	language	no	no	The type of a demonstrative system	ND	ibragimov1990	103193	NA	Timofey Mukhin
+49	Tsez	Tsez	language	yes	yes	The type of a demonstrative system	polycentric	imnajshvili1961	99101	NA	Timofey Mukhin
+50	Tsez	Tsibari	village	no	yes	The type of a demonstrative system	monocentric	comrie2007	1199	howda- proximal, this, near you	Timofey Mukhin
+51	Tsez	Kidero	dialect_nt1	no	yes	The type of a demonstrative system	monocentric	bokarev1959	196198	видимость?	Timofey Mukhin
+52	Tsez	Asakh	dialect_nt1	no	yes	The type of a demonstrative system	monocentric	comriepolinsky2007	6, 20, 380	ближний рефлексив. видимость?	Timofey Mukhin
+53	Tsova-Tush	Zemo-Alvani	village	yes	yes	The type of a demonstrative system	monocentric	desheriev1953	169177	NA	Timofey Mukhin
+54	Udi	Vartashen	dialect_toplevel	yes	yes	The type of a demonstrative system	monocentric	schulze2008	253	NA	Timofey Mukhin
+55	Udi	Nidzh	village	no	yes	The type of a demonstrative system	monocentric	ganenkov2008	23	NA	Timofey Mukhin

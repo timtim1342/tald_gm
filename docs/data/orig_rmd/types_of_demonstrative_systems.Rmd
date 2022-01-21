@@ -1,0 +1,17 @@
+## Types of systems
+
+According to [@andersonkeenan1985: 282],  there are two prototypes of demonstrative systems: person-oriented and distance-oriented. Both **person-** and **distance-oriented** systems consist of three terms, but they differ in the deictic centers relative to which demonstratives are defined. Distance-oriented demonstratives have the speaker as their deictic centre and can be **proximal**, **medial** and **distal**. Person-oriented are defined relative to the speaker or/and the hearer as **proximal to the speaker**, **proximal to the hearer** and **remote from both**.
+
+Anderson and Keenan’s approach is criticized for inaccurate terms in such works as [@rostovtsev-popel2009: 25], [@imai2003: 20]. As stated in these works, distance-oriented systems are also person-oriented because they have the speaker as their deictic centre. In this study, I use the terms proposed in [@schulze2008: 247], i.e. **monocentric** and **polycentric** for distance- and person-oriented systems, respectively.
+
+[Maps](types_of_demonstrative_systems_map.html) show the distribution of demonstrative system types among the languages in the sample. Mono- and polycentric systems are distributed evenly among the languages, see [Table 1](#m1).
+
+### Table 1. The distribution of demonstrative system types {#m1}
+
+|     |Number of languages|
+|-----|-----|
+|Monocentric|16|
+|Polycentric|17|
+
+Languages belonging to the same branch do not behave similarly. Only demonstrative systems of Andic languages tend to be polycentric, with the exception of Karata and Bagvalal, whose systems are described as monocentric.
+

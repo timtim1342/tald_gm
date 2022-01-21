@@ -1,8 +1,8 @@
 ---
-title: Standard of comparison
-author: Chiara Naccarato
+title: Types of demonstrative systems (Maps & Data)
+author: Timofey Mukhin
 date: 'Last update: November 2020'
-bibliography: ./data/orig_bib/standard_of_comparison.bib
+bibliography: ./data/orig_bib/types_of_demonstrative_systems.bib
 csl: ./data/apa.csl
 ---
 
@@ -10,15 +10,15 @@ csl: ./data/apa.csl
 knitr::opts_chunk$set(echo = FALSE, message = FALSE, comment = '')
 ```
 
-See [data and maps](2_standard_of_comparison_map.html).
+See [the chapter text](1_types_of_demonstrative_systems.html)
 
 ```{r}
 library(RefManageR)
 BibOptions(check.entries = FALSE, style = 'text', bib.style = 'authoryear')
 article_citation <- BibEntry(bibtype = 'Incollection', 
- key='naccarato2020',
- title='Standard of comparison',
- author='Chiara Naccarato',
+ key='mukhin2020',
+ title='Types of demonstrative systems',
+ author='Timofey Mukhin',
  year='2020',
  editor= 'Daniel, Michael  and Filatov, Konstantin and Moroz, George and Mukhin, Timofey and Naccarato, Chiara and Verhees, Samira',
  publisher='Linguistic Convergence Laboratory, NRU HSE',
@@ -40,7 +40,7 @@ print(article_citation, .opts = list(style = 'text'))
 print(article_citation, .opts = list(style = 'Bibtex'))
 ```
 
-```{r, child='data/orig_rmd/standard_of_comparison.Rmd'}
+```{r}
 ```
 
 ## References

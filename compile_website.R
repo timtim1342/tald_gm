@@ -17,9 +17,13 @@ features <- read_tsv("data/features.csv",
 features$id_0 <- sprintf(paste0("%0", nchar(length(features$id)), "d_"), 
                          seq_along(features$id))
 
+features %>% 
+  mutate(filename = str_c(filename, "_map")) %>% 
+  bind_rows(features) ->
+  features
+
 # create Rmd names ---------------------------------------------------------
-rmd_filenames <- paste0(features$id_0, features$filename, ".Rmd")
-rmd_map_filenames <- paste0(features$id_0, features$filename, "_map.Rmd")
+rmd_filenames <- c(str_c(features$id_0, features$filename, ".Rmd"))
 
 # create key for bibtex ----------------------------------------------------
 first_authors <- tolower(str_remove(map(str_split(features$author, " "), 2), ","))
@@ -33,11 +37,13 @@ knitr::opts_chunk$set(echo = FALSE, message = FALSE, comment = '')
 
 map(seq_along(rmd_filenames), function(i){
   ymlthis::yml_empty() %>% 
-    ymlthis::yml_title(features$title[i]) %>% 
+    ymlthis::yml_title(ifelse(str_detect(rmd_filenames[i], "_map.Rmd"), 
+                              str_c(features$title[i], " (Maps & Data)"), 
+                              features$title[i])) %>% 
     ymlthis::yml_author(features$author[i]) %>% 
     ymlthis::yml_date(paste0('Last update: ', features$updated_text[i])) %>% 
     ymlthis::yml_citations(bibliography = paste0("./data/orig_bib/", 
-                                                 features$filename[i], 
+                                                 str_remove(features$filename[i], "_map"), 
                                                  ".bib"), 
                            csl = './data/apa.csl') %>% 
     ymlthis::use_rmarkdown(path = rmd_filenames[i], 
@@ -46,7 +52,15 @@ map(seq_along(rmd_filenames), function(i){
                            include_body = FALSE,
                            body = NULL) 
   write_lines(c(
-    paste0("See [data and maps](", features$filename[i], "_map.html)."),
+    paste0("See [",
+           ifelse(str_detect(rmd_filenames[i], "_map.Rmd"), 
+                  "the chapter text", 
+                  "data and maps"),
+           "](", 
+           str_remove(rmd_filenames[i], "(_map)?.Rmd"), 
+           ifelse(str_detect(rmd_filenames[i], "_map.Rmd"), 
+                  ".html)",
+                  "_map.html).")),
     "",
     "```{r}",
     "library(RefManageR)",
@@ -76,7 +90,9 @@ map(seq_along(rmd_filenames), function(i){
     "print(article_citation, .opts = list(style = 'Bibtex'))",
     "```",
     "",
-    paste0("```{r, child='data/orig_rmd/", features$filename[i], ".Rmd'}"),
+    ifelse(str_detect(rmd_filenames[i], "_map.Rmd"), 
+           "```{r}",
+           str_c("```{r, child='data/orig_rmd/", features$filename[i], ".Rmd'}")),
     "```",
     "",
     "## References"),
