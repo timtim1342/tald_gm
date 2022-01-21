@@ -11,7 +11,7 @@ A quotative marks an utterance as being a quote (@one). Usually it accompanies a
 
 (@one) Botlikh [@alexeyevverheesunpub]
 ```{r}
-gloss_example("iš-qa ʁʷa-ba=**talu** hiƛ’-u hu-šːu-χi",
+gloss_example("iš-qa ʁʷa-ba=**talu** hiƛ'-u hu-šːu-χi",
               "home-APUD.LAT come-IMP=QUOT say-AOR DEM-M-APUD",
               "They told him: go home!")
 ```
@@ -20,7 +20,7 @@ In most East Caucasian languages the quoted utterance is presented (mostly) from
 
 (@two) Andi: Mixed [@maisak2017: 3]
 ```{r}
-gloss_example("isa-di rac’ːin-dːu **en.š-la** ɬe-di=**ɬoʁo** rela ɢobi=**dːu**",
+gloss_example("isa-di rac'ːin-dːu **en.š-la** ɬe-di=**ɬoʁo** rela ɢobi=**dːu**",
               "Jesus-ERG ask-PRF self.M-SUPER who-ERG=QUOT hand touch.AOR=QUOT",
               "Jesus asked: who touched me?")
 ```
@@ -38,7 +38,7 @@ Quotatives can also be employed to indicate a kind of hearsay in the form of a d
 
 (@four) Bezhta [@khalilova2011: 44]
 ```{r}
-gloss_example("hugi biλoγa Ø-enλ’-eyo-**λo**",
+gloss_example("hugi biλoγa Ø-enλ'-eyo-**λo**",
               "he house.near i-go-PST.W-QUOT",
               "He went home, **they said**.")
 ```
@@ -53,9 +53,11 @@ The aim of this chapter is to compare the presence of dedicated markers for both
 
 Reported speech particles are attested in almost all languages of the family. Most of them have a quotative function. The reportative function is more rarely attested, and especially dedicated reportative markers are uncommon. Reported speech particles often transparently originate from a verb of speech. In some cases a full verb is used as a kind of particle at the synchronic level (@five).
 
+[//]: # (Originally it was `\"ma-ax-utːa!\"`)
+
 (@five) Dargwa: Sanzhi [@forker2019b: 176]
-```{r results='asis'}
-gloss_example("xːunul-li tiladi b-arq’-ib ca-b hel-i-cːe \"ma-ax-utːa!\" **r-ik’-ul**",
+```{r, results='asis'}
+gloss_example("xːunul-li tiladi b-arq'-ib ca-b hel-i-cːe ma-ax-utːa **r-ik'-ul**",
               "woman-ERG request N-do.PFV-PRET be-N that-OBL-IN PROH-go-PROH.SG F-say.IPFV-ICVB",
               "His wife begged him: do not go!")
 ```
@@ -75,7 +77,7 @@ Particles marking general indirect evidentiality are attested in Karata and Kryz
 
 (@seven) Kryz: Alik [@authier2010: 16]
 ```{r}
-gloss_example("u-cbar ʕa-b-xhr-i k’ul-ci cuxud q’ay-ca-**miş**",
+gloss_example("u-cbar ʕa-b-xhr-i k'ul-ci cuxud q'ay-ca-**miş**",
               "3-HPL PV-HPL-come.PF-PART house-GEN master die-PERF-EVID",
               "The master of the house where they arrived had died.")
 ```

@@ -6,7 +6,7 @@ Many East Caucasian languages express ordinal numerals by means of a constructio
 
 (@one) Tsez [@bokarev1959: 202]
 ```{r}
-gloss_example("q’a-no āƛi-ru",
+gloss_example("q'a-no āƛi-ru",
               "two-DIR say-PTCP.PST",
               "second")
 ```
@@ -15,7 +15,7 @@ In Tsez (@one), the ordinal meaning is expressed by the combination of a cardina
 
 (@two) Agul: Huppuq' (Field data)
 ```{r}
-gloss_example("jaq’ud-pu gada",
+gloss_example("jaq'ud-pu gada",
               "four-ORD boy",
               "fourth boy")
 ```

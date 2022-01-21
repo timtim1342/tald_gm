@@ -4,9 +4,9 @@ The perfect indicates the current relevance of an event completed in the past. T
 
 (@one) Botlikh [@alexeyevverheesunpub]
 ```{r}
-gloss_example("den henala **inku-j-č’a** **ida**",
+gloss_example("den henala **inku-j-č'a** **ida**",
               "I still eat-is-NEG.CVB COP",
-              "I **haven’t eaten** yet.",
+              "I **haven't eaten** yet.",
               "(so I could eat something now)")
 ```
 
@@ -25,7 +25,7 @@ Perfects are typically periphrastic forms [@bybeedahl1989: 56]. Common sources i
 
 (@two) Avar [@verhees2018: 263]
 ```{r}
-gloss_example("nuc’a (žegi) **qan** **b-ugo**",
+gloss_example("nuc'a (žegi) **qan** **b-ugo**",
               "door (still) close.CVB N-be.PRS",
               "The door **is** (still) **closed**.")
 ```
@@ -36,7 +36,7 @@ The <b>resultative perfect</b>, illustrated in example (@three), represents a mo
 
 (@three) Avar [@verhees2018: 263]
 ```{r}
-gloss_example("di-ca nuc’a **qan** **b-ugo**",
+gloss_example("di-ca nuc'a **qan** **b-ugo**",
               "I-ERG door close.CVB N-be.PRS",
               "I **have closed** the door.")
 ```
@@ -78,7 +78,7 @@ gloss_example("barχl.i-in muχ **d-a(b)x-na**",
 
 (@five) Tabasaran [@maisakunpub]
 ```{r}
-gloss_example("uwu läχˁin **d-ap’-na=wa** hamus ʁaraχ sejir ap’-in!",
+gloss_example("uwu läχˁin **d-ap'-na=wa** hamus ʁaraχ sejir ap'-in!",
               "you work PV-do.PFV-PRF=2SG now go.away.IMP walk do-IMP",
               "You **have done** your work, now go and take a walk!")
 ```

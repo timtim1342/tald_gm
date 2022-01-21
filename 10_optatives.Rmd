@@ -1,8 +1,8 @@
 ---
-title: Standard of comparison (Maps & Data)
-author: Chiara Naccarato
-date: 'Last update: November 2020'
-bibliography: ./data/orig_bib/standard_of_comparison.bib
+title: Optatives
+author: Nina Dobrushina
+date: 'Last update: November 2021'
+bibliography: ./data/orig_bib/optatives.bib
 csl: ./data/apa.csl
 ---
 
@@ -11,16 +11,16 @@ knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE, comment = 
 library(lingglosses)
 ```
 
-See [the chapter text](2_standard_of_comparison.html)
+See [data and maps](10_optatives_map.html).
 
 ```{r}
 library(RefManageR)
 BibOptions(check.entries = FALSE, style = 'text', bib.style = 'authoryear')
 article_citation <- BibEntry(bibtype = 'Incollection', 
- key='naccarato2020',
- title='Standard of comparison',
- author='Chiara Naccarato',
- year='2020',
+ key='dobrushina2021',
+ title='Optatives',
+ author='Nina Dobrushina',
+ year='2021',
  editor= 'Daniel, Michael  and Filatov, Konstantin and Moroz, George and Mukhin, Timofey and Naccarato, Chiara and Verhees, Samira',
  publisher='Linguistic Convergence Laboratory, NRU HSE',
  address='Moscow',
@@ -41,7 +41,7 @@ print(article_citation, .opts = list(style = 'text'))
 print(article_citation, .opts = list(style = 'Bibtex'))
 ```
 
-```{r}
+```{r, child='data/orig_rmd/optatives.Rmd'}
 ```
 
 ```{r, results='asis'}

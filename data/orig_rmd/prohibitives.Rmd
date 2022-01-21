@@ -34,10 +34,10 @@ The following 24 languages belong to this category:
 While the suffixes, prefixes and infixes encode only prohibition, some additional remarks are necessary about the circumfixes used in Agul, Kryz, Lak, and Tabasaran. The prefixal part of the circumfix (*mV-* in all four languages) is the specialised prohibitive marker, while the functions of the suffixal parts are more diverse. For Lak, the case is rather clear: the suffixes *-ara* and *-ari* mark prohibition and, additionally, second person singular or plural (@one).
 
 (@one) Lak [@zhirkov1955: 119]
-```{r results='asis'}
+```{r}
 gloss_example("**ma**-čič-**ara** **ma**-čič-**ari**",
               "PROH-write-PROH.SG PROH-write-PROH.PL",
-              "Don’t write!", line_length = 20)
+              "Don't write!", line_length = 20)
 ``` 
 
 In Agul (@two) and Tabasaran (@three), the suffixes *-an* and *-an-aj* are less transparent. The imperative is traditionally formed by attaching these suffixes to the verb stem; in modern Agul and Tabasaran, however, the second person singular imperative is reduced to the bare stem, while the second person plural form is marked by *-aj*, i.e. *-an* is dismissed in both forms. In the prohibitive, *-an* is still obligatory, both in the singular and in the plural. This leads to two possible interpretations: Either the prohibitive is formed by prefixing the traditional imperatives (marked for number) with *mV-*, or the prohibitive has a specialised circumfixal marker *mV-…-an/-an-aj* which is attached to the bare stem. We opted for the second interpretation, as the contemporary languages use *-an* only for the prohibitive, i.e. the functional range of *-an* seems to have narrowed down to negative contexts.
@@ -46,14 +46,14 @@ In Agul (@two) and Tabasaran (@three), the suffixes *-an* and *-an-aj* are less 
 ```{r results='asis'}
 gloss_example("**ma**-χur-**an** **ma**-χur-**an-aj**",
               "PROH-read-PROH PROH-read-PROH-PL",
-              "Don’t read!", line_length = 20)
+              "Don't read!", line_length = 20)
 ```
 
 (@three) Tabasaran [@alekseevshixalieva2003: 70]
-```{r results='asis'}
+```{r}
 gloss_example("**mu**-ulup-an **mu**-ulup-**an-aj**",
               "PROH-show-PROH PROH-show-PROH-PL",
-              "Don’t show!", line_length = 20)
+              "Don't show!", line_length = 20)
 ```
 
 Kryz (@four) makes yet another distinction: transitive verbs are marked for number, while intransitive verbs are only marked for gender. Furthermore, if there is a preverb, the prefixal marker *ma-* must be inserted between the preverb and the stem, blurring the lines between prefix and infix.[^1]
@@ -62,9 +62,9 @@ Kryz (@four) makes yet another distinction: transitive verbs are marked for numb
 
 (@four) Kryz [@authier2009: 158]
 ```{r}
-gloss_example("q’irš.a-k ča-da-b-ha buluša **ma**-nz-**u**",
+gloss_example("q'irš.a-k ča-da-b-ha buluša **ma**-nz-**u**",
               "mud-SUB PV-NEG-F-stain.PF(PART) dress PROH-wash-PROH.SG.TRANS",
-              "Don’t wash the dress which is not mud stained!", 
+              "Don't wash the dress which is not mud stained!", 
               "(transitive -*u* for 2sg)")
 ```
 
@@ -87,7 +87,7 @@ Affixes and separate particles are used as prohibitive markers: Udi uses a prefi
 ```{r}
 gloss_example("**ma** vašlib",
               "PROH shave.IMP",
-              "Don’t shave!")
+              "Don't shave!")
 ```
 
 ### Regular imperative + regular negation marker
@@ -100,17 +100,17 @@ In Kumyk (@six) and Nogai (@seven), the bare stem serves as the imperative of th
 ```{r}
 gloss_example("oχu-**ma**",
               "read-NEG",
-              "Don’t read!")
+              "Don't read!")
 ```
 
 (@seven) Nogai [@baskakov1940: 87]
 ```{r}
 gloss_example("al-ma",
               "take-NEG",
-              "Don’t take!")
+              "Don't take!")
 ```
 
-[^4]: In Kumyk, the plural marker *-gɨz/giz* is attached after the negation marker (see Dmitriev [-@dmitriev1940: 119], i.e. *oχu-ma-gɨz* would be the second person plural (‘Don’t read!’). This is also true for Azerbaijani (*-jın*) and probably also for Nogai, although Baskakov [@baskakov1940: 87] is not clear about this. However, the agglutinative character of Turkic languages makes this kind of ‘morpheme stacking’ probable for Nogai as well.
+[^4]: In Kumyk, the plural marker *-gɨz/giz* is attached after the negation marker (see Dmitriev [-@dmitriev1940: 119], i.e. *oχu-ma-gɨz* would be the second person plural (‘Don't read!’). This is also true for Azerbaijani (*-jın*) and probably also for Nogai, although Baskakov [@baskakov1940: 87] is not clear about this. However, the agglutinative character of Turkic languages makes this kind of ‘morpheme stacking’ probable for Nogai as well.
 
 ### Remark on the marker forms
 

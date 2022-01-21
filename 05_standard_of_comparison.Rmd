@@ -1,8 +1,8 @@
 ---
-title: Morning greetings
-author: Chiara Naccarato, Samira Verhees
-date: 'Last update: November 2021'
-bibliography: ./data/orig_bib/morning_greetings.bib
+title: Standard of comparison
+author: Chiara Naccarato
+date: 'Last update: November 2020'
+bibliography: ./data/orig_bib/standard_of_comparison.bib
 csl: ./data/apa.csl
 ---
 
@@ -11,16 +11,16 @@ knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE, comment = 
 library(lingglosses)
 ```
 
-See [data and maps](3_morning_greetings_map.html).
+See [data and maps](05_standard_of_comparison_map.html).
 
 ```{r}
 library(RefManageR)
 BibOptions(check.entries = FALSE, style = 'text', bib.style = 'authoryear')
 article_citation <- BibEntry(bibtype = 'Incollection', 
- key='naccarato2021',
- title='Morning greetings',
- author='Chiara Naccarato and Samira Verhees',
- year='2021',
+ key='naccarato2020',
+ title='Standard of comparison',
+ author='Chiara Naccarato',
+ year='2020',
  editor= 'Daniel, Michael  and Filatov, Konstantin and Moroz, George and Mukhin, Timofey and Naccarato, Chiara and Verhees, Samira',
  publisher='Linguistic Convergence Laboratory, NRU HSE',
  address='Moscow',
@@ -41,7 +41,7 @@ print(article_citation, .opts = list(style = 'text'))
 print(article_citation, .opts = list(style = 'Bibtex'))
 ```
 
-```{r, child='data/orig_rmd/morning_greetings.Rmd'}
+```{r, child='data/orig_rmd/standard_of_comparison.Rmd'}
 ```
 
 ```{r, results='asis'}

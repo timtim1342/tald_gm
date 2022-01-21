@@ -10,7 +10,7 @@ The perfect's focus on a resulting situation can give rise to the implicature th
 
 (@one) Bagvalal [@tatevosov2007: 391]
 ```{r}
-gloss_example("ˁisa-r gandʷiː b-aqʷa-**m-o**  **ek’ʷa**",
+gloss_example("ˁisa-r gandʷiː b-aqʷa-**m-o**  **ek'ʷa**",
               "isa-ERG pit N-dig-N-PFV.CVB COP",
               "Isa **has dug** a pit.",
               "(the speaker infers this based on a result)")
@@ -75,9 +75,9 @@ Indirect evidential tenses in Tsakhur are formed with a non-attributivized (NAF)
 
 (@five) Tsakhur: Mishlesh [@maisaktatevosov2007: 383]
 ```{r}
-gloss_example("zɨ **alljhaː** **wo-r** č’alag-a-nče. birdan za-k’le ɢaǯe-n.",
+gloss_example("zɨ **alljhaː** **wo-r** č'alag-a-nče. birdan za-k'le ɢaǯe-n.",
               "1SG.1 1.go.IPFV AUX-1 forest-IN-EL suddenly 1SG.OBL-AFF 3.see.IPFV-A",
-              "I’**m walking** through the forest. Suddenly I see that…")
+              "I'**m walking** through the forest. Suddenly I see that…")
 ``` 
 
 Note that according to Maisak and Tatevosov [-@maisaktatevosov2007: 378], this system also results from diachronic developments of the perfect, only instead of a reanalysis of the perfect inflection (i.e. a periphrastic structure consisting of a perfective converb and a NAF copula), the copula itself was reanalyzed as an indirect evidential marker. This interpretation is limited to periphrastic tenses: copular sentences with <i>wo-d</i> are neutral in terms of evidentiality.

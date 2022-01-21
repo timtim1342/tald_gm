@@ -1,8 +1,8 @@
 ---
-title: Morning greetings (Maps & Data)
-author: Chiara Naccarato, Samira Verhees
-date: 'Last update: November 2021'
-bibliography: ./data/orig_bib/morning_greetings.bib
+title: Perfect
+author: Samira Verhees
+date: 'Last update: November 2020'
+bibliography: ./data/orig_bib/perfect.bib
 csl: ./data/apa.csl
 ---
 
@@ -11,16 +11,16 @@ knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE, comment = 
 library(lingglosses)
 ```
 
-See [the chapter text](3_morning_greetings.html)
+See [data and maps](06_perfect_map.html).
 
 ```{r}
 library(RefManageR)
 BibOptions(check.entries = FALSE, style = 'text', bib.style = 'authoryear')
 article_citation <- BibEntry(bibtype = 'Incollection', 
- key='naccarato2021',
- title='Morning greetings',
- author='Chiara Naccarato and Samira Verhees',
- year='2021',
+ key='verhees2020',
+ title='Perfect',
+ author='Samira Verhees',
+ year='2020',
  editor= 'Daniel, Michael  and Filatov, Konstantin and Moroz, George and Mukhin, Timofey and Naccarato, Chiara and Verhees, Samira',
  publisher='Linguistic Convergence Laboratory, NRU HSE',
  address='Moscow',
@@ -41,7 +41,7 @@ print(article_citation, .opts = list(style = 'text'))
 print(article_citation, .opts = list(style = 'Bibtex'))
 ```
 
-```{r}
+```{r, child='data/orig_rmd/perfect.Rmd'}
 ```
 
 ```{r, results='asis'}

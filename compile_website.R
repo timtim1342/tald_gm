@@ -8,6 +8,16 @@ testthat::test_dir("tests")
 # remove everything that starts with number and ends with Rmd --------------
 file.remove(grep("\\d{1,}_.*.Rmd", list.files(), value = TRUE))
 
+# convert .bib.tsv to .bib -------------------------------------------------
+
+map(list.files("data/orig_bib_tsv", full.names = TRUE), function(bib_tsv){
+  read_tsv(bib_tsv, progress = FALSE, show_col_types = FALSE) %>% 
+    bib2df::df2bib(bib_tsv %>% 
+                     str_remove_all("[_\\.]tsv") %>% 
+                     str_replace("_bib$", "\\.bib"))
+  })
+
+
 # read our fetures data ----------------------------------------------------
 features <- read_tsv("data/features.csv", 
                      progress = FALSE, 
@@ -42,7 +52,10 @@ map(seq_along(rmd_filenames), function(i){
                               str_c(features$title[i], " (Maps & Data)"), 
                               features$title[i])) %>% 
     ymlthis::yml_author(features$author[i]) %>% 
-    ymlthis::yml_date(paste0('Last update: ', features$updated_text[i])) %>% 
+    ymlthis::yml_date(paste0('Last update: ', 
+                             ifelse(str_detect(rmd_filenames[i], "_map.Rmd"), 
+                                    features$updated_map[i], 
+                                    features$updated_text[i]))) %>% 
     ymlthis::yml_citations(bibliography = paste0("./data/orig_bib/", 
                                                  str_remove(features$filename[i], "_map"), 
                                                  ".bib"), 

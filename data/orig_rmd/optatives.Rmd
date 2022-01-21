@@ -17,7 +17,7 @@ gloss_example("ja-allah ħušab taliħ g-a-b!",
 
 (@two) Dargwa: Mehweb [@dobrushina2019: 143]
 ```{r}
-gloss_example("musa uz-e bet’-a",
+gloss_example("musa uz-e bet'-a",
               "Musa M.work:IPFV-IMP say:PFV-IMP.TR",
               "Let Musa work.")
 ```
@@ -33,14 +33,14 @@ gloss_example("zɨ/wɨ/had saʁ r-iš-ij",
 
 (@four) Rutul: Kina (Dobrushina, field data)
 ```{r}
-gloss_example("said-a uq’ sej-ij",
+gloss_example("said-a uq' sej-ij",
               "Said-ERG grass mow-OPT",
               "Said should mow the grass.")
 ```
 
 (@five) Rutul: Kina (Dobrushina, field data)
 ```{r}
-gloss_example("\\*wa-d uq’ sej-ij ",
+gloss_example("*wa-d uq' sej-ij",
               "you-ERG grass mow-OPT",
               "You should mow the grass.")
 ```
@@ -129,9 +129,9 @@ gloss_example("ʕuˁ allah-li w=at",
 ```
 
 (@seven) Dargwa: Tanty [@sumbatovalander2014: 132]
-```{r}
+```{r seven}
 gloss_example("ʕuˁxːa allah-li d=at-are/-ar.te",
-              "you.PL Allah-ERG 1/2PL=leave-PL",
+              "you.PL Allah-ERG 1/2PL=leave-PL/-PL",
               "May Allah leave you (PL)!")
 ```
 
@@ -142,7 +142,7 @@ gloss_example("sa=j allah-li w=at-la kulpat b=erq-ab!",
               "May the family of this person blessed by Allah multiply!")
 ```
 
-Similar properties characterize the Lak form in *-wuj*. In this chapter, such forms are considered as usual optatives, despite their nominal features. Even more optative forms were found in Godoberi. While the grammar by [@kibrik1996] mentions only the form in *-be*, the dictionary by [@saidova2006] contains examples of two more optative forms -- in *-beːƛ’a* and in *-wara*.
+Similar properties characterize the Lak form in *-wuj*. In this chapter, such forms are considered as usual optatives, despite their nominal features. Even more optative forms were found in Godoberi. While the grammar by [@kibrik1996] mentions only the form in *-be*, the dictionary by [@saidova2006] contains examples of two more optative forms -- in *-beːƛ'a* and in *-wara*.
 
 (@nine) Godoberi [@saidova2006: 95]
 ```{r}
@@ -171,7 +171,7 @@ While most optatives found in Daghestan express blessings and curses, there are 
 ```{r}
 gloss_example("jaxšy jangur jav-ɣaj edi, qurɣaq bol-up tur-a",
               "good rain rain-OPT COP dry be-CVB stay-CVB",
-              "If only it would rain, it’s too dry.")
+              "If only it would rain, it's too dry.")
 ```
 
 ## Results
@@ -192,7 +192,7 @@ gloss_example("quq-a 	šeš-o-ƛo 	dublo",
 Some other languages, such as Mehweb and Lak, also have volitional forms marked by a say-imperative, but they express only indirect commands (i.e. 3rd person imperative), while blessings and curses are conveyed by other forms. For this and some other reasons it seems quite plausible that say-optatives developed from jussives by the extension of their meaning to the expression of blessings and curses in all persons. Map 3 shows whether the suffix of the optative is related to the imperative of the verb ‘say’ or not, with four values: say, non-say, both (if the language has several optative forms), or non-applicable (if the language has no dedicated optative).
 These two features often correlate, because the suffix derived from the imperative of the verb ‘say’ is usually added to the imperative of the main verb, cf. Khwarshi *šeš-o-ƛo*, where *šešo* is an imperative of the verb ‘stick’ [tell.IMP (him) stick.IMP] ‘may (he) stick’). Other combinations of these features are also possible: two optatives in Avar are based on imperatives, but none of them have a say-marker. Tat, according to [@authier2012: 176], has an optative with a say-marker derived from the subjunctive. Mehweb has a non-imperative stem and a non-say marker.
 
-The next feature concerns negative optatives. In East Caucasian languages, the negative counterpart of the imperative is usually encoded by a special form, which is formally not related to the imperative, and is usually unique in the system of negative forms (see chapter [Prohibitives]()). Negative optatives vary in this respect. In some languages, the optative marker is added to the prohibitive; therefore, the negative optative contains the whole prohibitive form. For example, the Hinuq negative optative is built as a prohibitive with the optative suffix *-ƛo*, cf. *kekir-om* [send-PROH] and *kekir-om-ƛo!* [send-PROH-OPT] in [@forker2013: 231]. The Hinuq optative is mapped as having prohibitive negation. Meanwhile, the Kubachi negative optative does not contain the prohibitive, but has the same prefix *ma-/me-/mā-/mē-*, which is found in these two forms only. Compare the following forms of the verb ‘do’: *baq’-a* (imperative) -- *bīq’-mē-q’it* (imperfective prohibitive), *bāq’-ab* (optative) -- *bīq’-mē-q’-ab* (negative imperfective optative). Another example of such a case is Ingush, where the proclitic *my-* is used with imperatives and optatives in order to form prohibitives and negative optatives. Such cases are classified as having volitional negative markers. Finally, there are languages which use regular (indicative) negation for the negative optative, although prohibitive negation is also found in the language, cf. Agul *ruX* ‘read’ -- *ma-ruXa* ‘don’t read’, but *xu-raj* ‘may [he] become’ -- *da-xu-raj* ‘may [he] not become’ [@maisakmerdanova2002]. Map 4 encodes negative optative, with five possible values: optatives with standard negation, prohibitive-based optatives, optatives with volitional negation, both (if the language has several optative forms), non-applicable (if the language has no dedicated optative or no dedicated prohibitive).
+The next feature concerns negative optatives. In East Caucasian languages, the negative counterpart of the imperative is usually encoded by a special form, which is formally not related to the imperative, and is usually unique in the system of negative forms (see chapter [Prohibitives]()). Negative optatives vary in this respect. In some languages, the optative marker is added to the prohibitive; therefore, the negative optative contains the whole prohibitive form. For example, the Hinuq negative optative is built as a prohibitive with the optative suffix *-ƛo*, cf. *kekir-om* [send-PROH] and *kekir-om-ƛo!* [send-PROH-OPT] in [@forker2013: 231]. The Hinuq optative is mapped as having prohibitive negation. Meanwhile, the Kubachi negative optative does not contain the prohibitive, but has the same prefix *ma-/me-/mā-/mē-*, which is found in these two forms only. Compare the following forms of the verb ‘do’: *baq’-a* (imperative) -- *bīq’-mē-q’it* (imperfective prohibitive), *bāq’-ab* (optative) -- *bīq’-mē-q’-ab* (negative imperfective optative). Another example of such a case is Ingush, where the proclitic *my-* is used with imperatives and optatives in order to form prohibitives and negative optatives. Such cases are classified as having volitional negative markers. Finally, there are languages which use regular (indicative) negation for the negative optative, although prohibitive negation is also found in the language, cf. Agul *ruχ* ‘read’ -- *ma-ruχa* ‘don’t read’, but *xu-raj* ‘may [he] become’ -- *da-xu-raj* ‘may [he] not become’ [@maisakmerdanova2002]. Map 4 encodes negative optative, with five possible values: optatives with standard negation, prohibitive-based optatives, optatives with volitional negation, both (if the language has several optative forms), non-applicable (if the language has no dedicated optative or no dedicated prohibitive).
 
 In some languages, I came across forms which are in some sense irregular -- either they are not accepted by all speakers, or they are limited to several verbs. For example, Mehweb has a negative optative derived from the imperfective stem with prohibitive negation (*lug-a-b* ‘give (imperfective optative)’ - *mu-lug-a-b* (negative optative), as is typical for Dargwa languages, but the regular indicative negation can also be used in the negative optative, especially with the perfective stem (*g-a-b* ‘give (perfective optative)’ can have a negative optative *ħa-g-a-b*) [@dobrushina2019: 139]. Forms with indicative negation seem rarer, and Mehweb speakers vary in their evaluation of such forms -- some fully accept them, while others do not. The forms look like an innovation, which is probably due to the isolation of Mehweb from other Dargwa languages. Another example of irregularity also comes from Mehweb. As indicated earlier, Dargwa languages have a zero-marked optative along with a suffixal one. Mehweb also has a zero-marked optative, but only from several verbs: *w-ebk-a-b* -- *w-ebk’* ‘may he die!’ In all such cases, the irregular form was not included in the database and was not mapped.
 
