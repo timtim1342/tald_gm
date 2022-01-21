@@ -1,7 +1,7 @@
 library(tidyverse)
 
 # RUN TESTS ----------------------------------------------------------------
-source("tests.R")
+testthat::test_dir("tests")
 
 # GENERATION OF THE RMD ----------------------------------------------------
 
