@@ -27,19 +27,11 @@ Dargwa languages feature constructions that are essentially similar to the const
 In other groups of the Nakh-Daghestanian family similar constructions are found in Lak and Archi (Lezgic). In Lak, the form *iwz-ra-w* [get_up.m-2sg-pst-q] is found along with a wish-construction (see Section 2.2), but in the dictionary by Khajdakov [-@khajdakov1962: 124] it is translated more generally as ‘hello’. In Archi, morning greetings are expressed with a formula that differs a little from the constructions discussed above in terms of the lexical units employed (@one).
 
 (@one) Archi (M. Chumakina, p.c.)
-<ul>
-<table> 
-  <tr>
-  <td><i>nibk’i&nbsp;a<r>c’u=ra</td></i>
-    </tr>
-  <tr>
-  <td>sleep.erg&nbsp;‹f.sg›fill(pfv)=q</td>
-  </tr>
-  <tr>
-   <td colspan="3">‘Good morning, lit. did the sleep fill (you.f)?’</td>
-  </tr>
-</table>
-</ul>
+```{r}
+gloss_example("nibk'i ac'u=ra",
+              "sleep.ERG [F.SG]fill(PFV)=Q",
+              "Good morning, lit. did the sleep fill (you.f)?")
+```
 
 ### 2.2 Good morning
 

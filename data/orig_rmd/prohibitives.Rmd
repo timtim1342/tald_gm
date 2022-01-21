@@ -1,0 +1,135 @@
+## Introduction
+
+The prohibitive is typically defined as the negative imperative, i.e. it “implies making someone not do something, having the effect of forbidding, preventing, or restricting” [@aikhenvald2017: 3]. This chapter focuses on the formation of the prohibitive in the languages of Daghestan and neighbouring regions, analysing two different aspects of the morphological coding: First, the verb form (especially whether it is an imperative form or not), and second, the type of negation marker/affix used. Based on this, the general encoding types are deduced. Additionally, the phonological form of the markers is shortly analysed.
+
+In the languages of the world, the most common strategy to code the prohibitive is to use the second (singular) imperative and a sentential negative strategy not found in declaratives (37% of the sample [@auweralejeune2013], see https://wals.info/chapter/71). Two other common strategies involve the use of non-imperative verbal constructions and a negation marker not found in declaratives (29%), as well as the use of the imperative combined with a negation found in declaratives (23%). The use of a non-imperative verbal construction together with a negative strategy found in declaratives is the least common strategy in the languages of the world (11%).
+
+Interestingly, “[c]ategories expressed in positive imperatives tend to be neutralized under negation” [@aikhenvald2017: 19]. Some languages of the TALD sample, for instance, differentiate between transitivity and intransitivity in positive imperatives but use only one form for the prohibitive. Likewise, only one stem type is used for prohibitives if the language has both a perfective and an imperfective stem. 
+
+While the variation of stem types is only superficially coded in the WALS (i.e. **normal imperative** vs. **special imperative**; see https://wals.info/feature/71A#2/19.3/149.1), the types of prohibitive markers are not considered at all. For the TALD sample, the stem types are examined in more detail, i.e. non-imperative verb forms are individually identified and listed. Furthermore, the different types of affixes and particles used as prohibitive markers are indicated. Our goal is to classify the languages according to the verb form and negation marker used to encode the prohibitive.
+
+## Results
+
+### Non-imperative verb form + special prohibitive marker
+Most languages in this category use the **bare verb stem** to form the prohibitive. Other stems are also attested, although much less frequently. The prohibitive marker can be a suffix, circumfix, infix, or prefix, but generally, **suffixes** are preferred. Table 1 presents the combinations found in the sample, showing that **bare stem + suffix** is the most common encoding type.
+
+Table 1. Combinations of non-imperative verb forms and special prohibitive affixes
+
+|          |Bare stem |Future stem |Masdar |NA |Past stem |Present stem |Total|
+|----------|----------|------------|-------|---|----------|-------------|-----|
+|Circumfix |3         |-           |-      |-  |1         |-            |4    |
+|Infix     |-         |-           |1      |-  |1         |-            |2    |
+|Prefix    |1         |1           |-      |-  |-         |-            |2    |
+|Suffix    |10        |-           |-      |1  |1         |4            |16   |
+|Total     |14        |1           |1      |1  |3         |3            |24   |
+
+The following 24 languages belong to this category:
+
+- All 9 Avar-Andic languages: Northern Akhvakh, Andi, Standard Avar, Bagvalal, Botlikh, Chamalal, Godoberi, Karata, Tindi
+- Standard Dargwa (including all varieties on the dialect continuum)
+- Lak (isolate)
+- 8 Lezgic languages (except for Udi): Agul, Archi, Budukh, Kryz, Lezgian, Rutul, Tabasaran, Tsakhur
+- All 5 Tsezic languages: Bezhta, Hinuq, Hunzib, Khwarshi, Tsez
+
+While the suffixes, prefixes and infixes encode only prohibition, some additional remarks are necessary about the circumfixes used in Agul, Kryz, Lak, and Tabasaran. The prefixal part of the circumfix (*mV-* in all four languages) is the specialised prohibitive marker, while the functions of the suffixal parts are more diverse. For Lak, the case is rather clear: the suffixes *-ara* and *-ari* mark prohibition and, additionally, second person singular or plural (@one).
+
+(@one) Lak [@zhirkov1955: 119]
+```{r results='asis'}
+gloss_example("**ma**-čič-**ara** **ma**-čič-**ari**",
+              "PROH-write-PROH.SG PROH-write-PROH.PL",
+              "Don’t write!", line_length = 20)
+``` 
+
+In Agul (@two) and Tabasaran (@three), the suffixes *-an* and *-an-aj* are less transparent. The imperative is traditionally formed by attaching these suffixes to the verb stem; in modern Agul and Tabasaran, however, the second person singular imperative is reduced to the bare stem, while the second person plural form is marked by *-aj*, i.e. *-an* is dismissed in both forms. In the prohibitive, *-an* is still obligatory, both in the singular and in the plural. This leads to two possible interpretations: Either the prohibitive is formed by prefixing the traditional imperatives (marked for number) with *mV-*, or the prohibitive has a specialised circumfixal marker *mV-…-an/-an-aj* which is attached to the bare stem. We opted for the second interpretation, as the contemporary languages use *-an* only for the prohibitive, i.e. the functional range of *-an* seems to have narrowed down to negative contexts.
+
+(@two) Agul [@magometov1970: 141]
+```{r results='asis'}
+gloss_example("**ma**-χur-**an** **ma**-χur-**an-aj**",
+              "PROH-read-PROH PROH-read-PROH-PL",
+              "Don’t read!", line_length = 20)
+```
+
+(@three) Tabasaran [@alekseevshixalieva2003: 70]
+```{r results='asis'}
+gloss_example("**mu**-ulup-an **mu**-ulup-**an-aj**",
+              "PROH-show-PROH PROH-show-PROH-PL",
+              "Don’t show!", line_length = 20)
+```
+
+Kryz (@four) makes yet another distinction: transitive verbs are marked for number, while intransitive verbs are only marked for gender. Furthermore, if there is a preverb, the prefixal marker *ma-* must be inserted between the preverb and the stem, blurring the lines between prefix and infix.[^1]
+
+[^1]: This is also true for the two Dargwa varieties Sanzhi and Tanti [@forker2020dargwa: 298--299]; [@sumbatovalander2014] as well as for the Rutul varieties Luchek and Mukhad [@alekseev1994: 234], [@maxmudova2002: 170], [@ibragimov2004: 107].
+
+(@four) Kryz [@authier2009: 158]
+```{r}
+gloss_example("q’irš.a-k ča-da-b-ha buluša **ma**-nz-**u**",
+              "mud-SUB PV-NEG-F-stain.PF(PART) dress PROH-wash-PROH.SG.TRANS",
+              "Don’t wash the dress which is not mud stained!", 
+              "(transitive -*u* for 2sg)")
+```
+
+### Regular imperative + special prohibitive marker
+
+The second most common pattern in the sample of languages is the combination of a regular imperative with a specialised prohibitive marker. However, this pattern is infrequent compared to the one previously described: Only 18% of the languages make use of it. 
+
+The six languages in this category are:
+- Indo-European: Armenian
+- Khinalug isolate
+- Lezgic: Udi
+- All 3 Nakh languages: Tsova-Tush, Ingush, Standard Chechen
+
+Affixes and separate particles are used as prohibitive markers: Udi uses a prefix, Khinalug has a suffix,[^2] and the other four languages use separate particles (@five).[^3]
+
+[^2]: Khinalug is the only language in the sample that has only one affix to mark both prohibition and number. The suffixes *-kuj* (Sg) and *-kun* (Pl) are attached to the regular imperative and serve as a portmanteau morpheme [@desheriev1959: 116--117], [@kibriketal1972: 191].
+[^3]: Molochieva [-@molochieva2010: 254] defines Chechen *ma-* as a clitic, i.e. a syntactically independent but phonologically dependent morpheme.
+
+(@five) Tsova-Tush [@desherieva1999: 170]
+```{r}
+gloss_example("**ma** vašlib",
+              "PROH shave.IMP",
+              "Don’t shave!")
+```
+
+### Regular imperative + regular negation marker
+
+All three languages from the Turkic family, i.e. Kumyk, Nogai, and Northern Azerbaijani, use the regular imperative together with a regular negation marker to encode the prohibitive. They mark the prohibitive with the general negation suffix *-ma* (with different phonological variants).
+
+In Kumyk (@six) and Nogai (@seven), the bare stem serves as the imperative of the second person singular, i.e. one could also argue that they do in fact use another verb form than the imperative to form the prohibitive. However, we decided to analyse the form as an imperative, as it is for example not identical to the cases of Agul and Tabasaran. In those languages, the use of the bare stem as the second singular imperative form seems to be a recent development, and the original imperative form still exists, although it is probably mostly out of use. In Nogai and Kumyk, there is no such alternative to the use of the bare stem as the imperative.
+
+(@six) Kumyk [@abdullaevaetal2014: 86] [^4]
+```{r}
+gloss_example("oχu-**ma**",
+              "read-NEG",
+              "Don’t read!")
+```
+
+(@seven) Nogai [@baskakov1940: 87]
+```{r}
+gloss_example("al-ma",
+              "take-NEG",
+              "Don’t take!")
+```
+
+[^4]: In Kumyk, the plural marker *-gɨz/giz* is attached after the negation marker (see Dmitriev [-@dmitriev1940: 119], i.e. *oχu-ma-gɨz* would be the second person plural (‘Don’t read!’). This is also true for Azerbaijani (*-jın*) and probably also for Nogai, although Baskakov [@baskakov1940: 87] is not clear about this. However, the agglutinative character of Turkic languages makes this kind of ‘morpheme stacking’ probable for Nogai as well.
+
+### Remark on the marker forms
+
+Following Bancel et al.’s [-@banceletal2021] finding that the particle *\*ma* functions as a prohibitive/negative marker in a wide variety of genetically and geographically distant languages, the markers of the TALD language sample were analysed for their phonological form. 17 languages have an *mV* marker and 16 do not, so no general tendency can be identified. However, the genealogical distribution is unambiguous: Standard Dargwa (and all its varieties), Armenian (the only Indo-European language), the Lak isolate, almost all Lezgic languages, all Nakh languages, and all Turkic languages have an *mV* marker. On the other hand, all Avar-Andic languages, the Khinalug isolate, and all Tsezic languages employ other forms. Archi (Lezgic) is the only outlier in the sample, as it does not have the Lezgic branch's default *mV* marker. Interestingly, markers that are not *mV* are exclusively suffixes, while the *mV* markers occur in varying places (prefix, infix, circumfix, suffix, free particle).
+
+## Areal distribution
+
+In the TALD sample, only three out of the four categories presented in the WALS are attested. Table 2 shows a numerical comparison of the WALS and the TALD samples:
+
+Table 2. Comparison of the prohibitive encoding strategies in the WALS and TALD samples
+
+|Encoding type                                         |WALS|    |TALD sample|    |
+|------------------------------------------------------|----|----|-----------|----|
+|Regular imperative + regular negation marker          |113 |23% |3          |9%  |
+|Regular imperative + special prohibitive marker       |182 |37% |6          |18% |
+|Non-imperative verb form + regular negation marker    |55  |11% |0          |0%  |
+|Non-imperative verb form + special prohibitive marker |146 |29% |24         |73% |
+|Total                                                 |496 |100%|33         |100%|
+
+The languages of the TALD sample show a clear preference for the combination of non-imperative verb forms and a specialised prohibitive marker. The most common verb form is the bare stem, but other stem types such as present and past stems are also attested. Suffixes are the preferred affix type, but circumfixes, infixes and prefixes are also attested. 
+
+Language family is a good predictor for the encoding strategy: all Avar-Andic, Tsezic, and Dargwa varieties, almost all Lezgic languages, and the Lak isolate make use of the **non-imperative verb form + special prohibitive marker** strategy; all Nakh languages, Armenian (the only Indo-European language), the Khinalug isolate and one Lezgic language belong to the **regular imperative + special prohibitive marker** category; and only the agglutinative Turkic languages encode prohibitives with a **regular imperative + regular negation marker**. Also, the marker form (*mV* vs. other forms) is strongly dependent on the language family, with the Lezgic language Archi being the only exception to the rule.

@@ -31,7 +31,8 @@ first_authors <- tolower(str_remove(map(str_split(features$author, " "), 2), ","
 # create Rmd files ---------------------------------------------------------
 options(ymlthis.rmd_body = "
 ```{r, include = FALSE}
-knitr::opts_chunk$set(echo = FALSE, message = FALSE, comment = '')
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE, comment = '')
+library(lingglosses)
 ```
 ")
 
@@ -52,6 +53,7 @@ map(seq_along(rmd_filenames), function(i){
                            include_body = FALSE,
                            body = NULL) 
   write_lines(c(
+    # add link to map/chapter page
     paste0("See [",
            ifelse(str_detect(rmd_filenames[i], "_map.Rmd"), 
                   "the chapter text", 
@@ -62,6 +64,7 @@ map(seq_along(rmd_filenames), function(i){
                   ".html)",
                   "_map.html).")),
     "",
+    # create and add citation
     "```{r}",
     "library(RefManageR)",
     "BibOptions(check.entries = FALSE, style = 'text', bib.style = 'authoryear')",
@@ -89,12 +92,24 @@ map(seq_along(rmd_filenames), function(i){
     "```{r}",
     "print(article_citation, .opts = list(style = 'Bibtex'))",
     "```",
+    # add text of the Rmd
     "",
     ifelse(str_detect(rmd_filenames[i], "_map.Rmd"), 
            "```{r}",
            str_c("```{r, child='data/orig_rmd/", features$filename[i], ".Rmd'}")),
     "```",
     "",
+    # do not print "## List of glosses", if there is no glosses
+    "```{r, results='asis'}",
+    "gloss_file_name <- getOption('lingglosses.glosses_list')",
+    "if(file.exists(gloss_file_name) && file.size(gloss_file_name) > 0){'## List of glosses'}",
+    "```",
+    # make a gloss list
+    "```{r}",
+    "make_gloss_list()",
+    "```",
+    "",
+    # add refferences
     "## References"),
     rmd_filenames[i], append = TRUE)
 })

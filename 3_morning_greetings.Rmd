@@ -7,7 +7,8 @@ csl: ./data/apa.csl
 ---
 
 ```{r, include = FALSE}
-knitr::opts_chunk$set(echo = FALSE, message = FALSE, comment = '')
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE, comment = '')
+library(lingglosses)
 ```
 
 See [data and maps](3_morning_greetings_map.html).
@@ -41,6 +42,14 @@ print(article_citation, .opts = list(style = 'Bibtex'))
 ```
 
 ```{r, child='data/orig_rmd/morning_greetings.Rmd'}
+```
+
+```{r, results='asis'}
+gloss_file_name <- getOption('lingglosses.glosses_list')
+if(file.exists(gloss_file_name) && file.size(gloss_file_name) > 0){'## List of glosses'}
+```
+```{r}
+make_gloss_list()
 ```
 
 ## References

@@ -1,0 +1,56 @@
+id	lang	idiom	type	genlang_point	map	feature	value	source	page	comment	contributor
+1	Agul	Agul	language	yes	yes	The expression of elevation in demonstratives	pronouns	maisak2014	400	ТА говорит, что везде так	Timofey Mukhin
+2	Akhvakh	Tad-Magitl’	village	yes	yes	The expression of elevation in demonstratives	affixes	magomedovaabdulaeva2007	681-682		Timofey Mukhin
+3	Andi	Upper Andi	dialect_toplevel	yes	yes	The expression of elevation in demonstratives	affixes	sulejmanov1957	323-328	'приводит формы, но не сводит их к основам и показателям (столбец stems-додумка). судя по схеме выше/ниже нет у ''ближе к 1-му лицу'', у ''ближе 3-му лицу'' (а может еще у кого) нет немаркированной по высоте формы'	Timofey Mukhin
+4	Andi	Zilo	village	no	yes	The expression of elevation in demonstratives	affixes	kayeetaldraft2020	12-13	of which the latter refers to objects that are relatively further away- про все дистальные формы или только одну? 4 степени удаленности? что за distal, от кого? только к medial и distal по высоте	Timofey Mukhin
+5	Archi	Archib	village	yes	yes	The expression of elevation in demonstratives	pronouns	kibrik1977	124		Timofey Mukhin
+6	Armenian	Eastern Armenian	dialect_toplevel	yes	yes	The expression of elevation in demonstratives	no elevation	dum-tragut2009	123,129		Timofey Mukhin
+7	Avar	Standard Avar	language	yes	yes	The expression of elevation in demonstratives	pronouns	forkerdraft2020	7		Timofey Mukhin
+8	Azerbaijani	Standard Azerbaijani	language	yes	yes	The expression of elevation in demonstratives	no elevation	shiralievsevortyan1971	79,82	есть еще какой-то hemen (наш). но как он встроен в парадигму не ясно	Timofey Mukhin
+9	Bagvalal	Kvanada	village	no	yes	The expression of elevation in demonstratives	no elevation	kibrik2001	161, 658, 670	непонятно насколько она не p-o. в толковании дальнего д есть слушающий, а так нигде нет. в чем разница между удаленными. на с 161 наречия do. а может и нет (с 658) +ТАБЛИЧКА НА СТР 670!	Timofey Mukhin
+10	Bagvalal	Bagvalal	language	yes	yes	The expression of elevation in demonstratives	affixes	magometova2004	579-580	e семантика не написана	Timofey Mukhin
+11	Bezhta	Bezhta	village	no	no	The expression of elevation in demonstratives	no elevation	madieva1965	98,1	видимость?	Timofey Mukhin
+12	Bezhta	Bezhta	language	yes	yes	The expression of elevation in demonstratives	no elevation	comrieetal2015	302	ва- маркирует видимость! может отдельно отмечать	Timofey Mukhin
+13	Botlikh	Botlikh	language	no	no	The expression of elevation in demonstratives	ND	khalidova2017	78	есть вертикальность, но нет форм	Timofey Mukhin
+14	Botlikh	Botlikh	village	yes	yes	The expression of elevation in demonstratives	no elevation	alexeyevverheesdraft2020	9	надо решить какое описание выбрать, а то там сказано сильно разное. что значит a little to the side? и вообще что это за система???	
+15	Budukh	Budukh	village	yes	yes	The expression of elevation in demonstratives	no elevation	talibov2007	121-122	не очень про значение. что за сбоку?	Timofey Mukhin
+16	Chamalal	Lower Gakvari	village	yes	yes	The expression of elevation in demonstratives	affixes	magomedova1999	423		Timofey Mukhin
+17	Chechen	Standard Chechen	language	yes	yes	The expression of elevation in demonstratives	no elevation	nichols1994	34		Timofey Mukhin
+18	Dargwa	Standard Dargwa	language	no	no	The expression of elevation in demonstratives	pronouns	musaev2002	63	(у участников речи) это что?	Timofey Mukhin
+19	Dargwa	Kubachi	village	no	yes	The expression of elevation in demonstratives	pronouns	magometov1963	139,143		Timofey Mukhin
+20	Dargwa	Akusha	dialect_nt1	yes	yes	The expression of elevation in demonstratives	pronouns	abdullaev1954	139-140		Timofey Mukhin
+21	Dargwa	Itsari	village	no	yes	The expression of elevation in demonstratives	pronouns	sumbatovamutalov2003	37	стороны света?	Timofey Mukhin
+22	Dargwa	Tanty	village	no	yes	The expression of elevation in demonstratives	pronouns	sumbatovalander2014	76-77		Timofey Mukhin
+23	Georgian	Standard Georgian	language	yes	yes	The expression of elevation in demonstratives	no elevation	hewitt2005	18		Timofey Mukhin
+24	Godoberi	Godoberi	village	yes	yes	The expression of elevation in demonstratives	pronouns	kibriketal1996	37,42	кажется ядро составляют ha,hu,ho, причем ho записан как анафорическое, а далее+как far away. есть только that down ther/ aside.	Timofey Mukhin
+25	Hinuq	Hinuq	village	yes	yes	The expression of elevation in demonstratives	no elevation	forker2013	132-140	разные серии дейктические и анафорические. если для разных функций своя серия (сохраняющая исконное дейктическое противопоставление), то это немного необычно, нет?	Timofey Mukhin
+26	Hunzib	Hunzib	language	yes	yes	The expression of elevation in demonstratives	no elevation	vandenberg1995	60-61	специальный анафорический префикс?	Timofey Mukhin
+27	Ingush	Standard Ingush	language	yes	yes	The expression of elevation in demonstratives	no elevation	nichols2011	173, 178, 658		Timofey Mukhin
+28	Karata	Karata	dialect_toplevel	no	no	The expression of elevation in demonstratives	affixes	magomedbekova1971	104		Timofey Mukhin
+29	Karata	Karata	village	yes	yes	The expression of elevation in demonstratives	affixes	pasquereaudraft2020	16		Timofey Mukhin
+30	Khinalug	Khinalug	village	yes	yes	The expression of elevation in demonstratives	affixes	kibriketal1972	74,77	что-то про контактную близость. какие-то самостоятельные/несамостоятельные формы. не супер понятно	Timofey Mukhin
+31	Khinalug	Khinalug	village	no	no	The expression of elevation in demonstratives	ND	desheriev1959	123,196		Timofey Mukhin
+32	Khwarshi	Kwantlada	village	yes	yes	The expression of elevation in demonstratives	no elevation	khalilova2009	143		Timofey Mukhin
+33	Kryz	Alik	village	yes	yes	The expression of elevation in demonstratives	no elevation	authier2009	59-61		Timofey Mukhin
+34	Kumyk	Standard Kumyk	language	no	no	The expression of elevation in demonstratives	no elevation	abdullaevaetal2014	252-255		Timofey Mukhin
+35	Kumyk	Standard Kumyk	language	yes	yes	The expression of elevation in demonstratives	no elevation	dmitriev1940	77-79	 + известность	Timofey Mukhin
+36	Lak	Standard Lak	language	yes	yes	The expression of elevation in demonstratives	pronouns	zhirkov1955	62,71	га- тот ниже. значение ниже сильно ослаблено. нейтральный?	Timofey Mukhin
+37	Lezgian	Standard Lezgian	language	yes	yes	The expression of elevation in demonstratives	pronouns	Haspelmath1993	184,19		Timofey Mukhin
+38	Nogai	Standart Nogai	language	no	no	The expression of elevation in demonstratives		baskakov1997	332		Timofey Mukhin
+39	Nogai	Nogai proper	language	yes 	yes	The expression of elevation in demonstratives	no elevation	baskakov1940	74,77		Timofey Mukhin
+40	Rutul	Mukhad	dialect_toplevel	yes	yes	The expression of elevation in demonstratives	no elevation	maxmudova2002	187		Timofey Mukhin
+41	Tabasaran	Standard Tabasaran	language	no	no	The expression of elevation in demonstratives	pronouns	alekseevshixalieva2003	57-58		Timofey Mukhin
+42	Tabasaran	Northern Tabasaran	dialect_toplevel	no	no	The expression of elevation in demonstratives	pronouns	magometov1965	176,178		Timofey Mukhin
+43	Tabasaran	Standard Tabasaran	language	yes	yes	The expression of elevation in demonstratives	pronouns	uslar1979	135-136		Timofey Mukhin
+44	Tat	Judeo-Tat	dialect_toplevel	yes	yes	The expression of elevation in demonstratives	no elevation	authier2012	114-115		Timofey Mukhin
+45	Tindi	Tindi	village	yes	yes	The expression of elevation in demonstratives	affixes	magomedova2012	126		Timofey Mukhin
+46	Tindi	Tindi	village	no	no	The expression of elevation in demonstratives	affixes	authierdraft2020	10-11	у магомедовой po	Timofey Mukhin
+47	Tsakhur	Mishlesh	village	yes	yes	The expression of elevation in demonstratives	no elevation	kibrik1999	131; 133		Timofey Mukhin
+48	Tsakhur	Tsakhur	language	no	no	The expression of elevation in demonstratives	no elevation	ibragimov1990	103,193		Timofey Mukhin
+49	Tsez	Tsez	language	yes	yes	The expression of elevation in demonstratives	no elevation	imnajshvili1961	99,101		Timofey Mukhin
+50	Tsez	Tsibari	village	no	yes	The expression of elevation in demonstratives	no elevation	comrie2007	1199	howda- proximal, this, near you	Timofey Mukhin
+51	Tsez	Kidero	dialect_nt1	no	yes	The expression of elevation in demonstratives	no elevation	bokarev1959	196,198	видимость?	Timofey Mukhin
+52	Tsez	Asakh	dialect_nt1	no	yes	The expression of elevation in demonstratives	no elevation	comriepolinsky2007	6, 20, 380	ближний рефлексив. видимость?	Timofey Mukhin
+53	Tsova-Tush	Zemo-Alvani	village	yes	yes	The expression of elevation in demonstratives	no elevation	desheriev1953	169,177		Timofey Mukhin
+54	Udi	Vartashen	dialect_toplevel	yes	yes	The expression of elevation in demonstratives	no elevation	schulze2008	253		Timofey Mukhin
+55	Udi	Nidzh	village	no	yes	The expression of elevation in demonstratives	no elevation	ganenkov2008	23		Timofey Mukhin
