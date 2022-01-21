@@ -71,7 +71,7 @@ map(seq_along(rmd_filenames), function(i){
     "article_citation <- BibEntry(bibtype = 'Incollection', ",
     paste0(" key='", first_authors[i], features$created_date[i], "',"),
     paste0(" title='", features$title[i], "',"),
-    paste0(" author='", features$author[i], "',"),
+    paste0(" author='", str_replace(features$author[i], ",", " and"), "',"),
     paste0(" year='", features$created_date[i], "',"),
     " editor= 'Daniel, Michael  and Filatov, Konstantin and Moroz, George and Mukhin, Timofey and Naccarato, Chiara and Verhees, Samira',",
     " publisher='Linguistic Convergence Laboratory, NRU HSE',",
@@ -102,8 +102,9 @@ map(seq_along(rmd_filenames), function(i){
     # do not print "## List of glosses", if there is no glosses
     "```{r, results='asis'}",
     "gloss_file_name <- getOption('lingglosses.glosses_list')",
-    "if(file.exists(gloss_file_name) && file.size(gloss_file_name) > 0){'## List of glosses'}",
+    "if(file.exists(gloss_file_name) && file.size(gloss_file_name) > 0){cat('## List of glosses')}",
     "```",
+    "",
     # make a gloss list
     "```{r}",
     "make_gloss_list()",

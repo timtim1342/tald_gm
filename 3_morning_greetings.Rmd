@@ -19,7 +19,7 @@ BibOptions(check.entries = FALSE, style = 'text', bib.style = 'authoryear')
 article_citation <- BibEntry(bibtype = 'Incollection', 
  key='naccarato2021',
  title='Morning greetings',
- author='Chiara Naccarato, Samira Verhees',
+ author='Chiara Naccarato and Samira Verhees',
  year='2021',
  editor= 'Daniel, Michael  and Filatov, Konstantin and Moroz, George and Mukhin, Timofey and Naccarato, Chiara and Verhees, Samira',
  publisher='Linguistic Convergence Laboratory, NRU HSE',
@@ -46,8 +46,9 @@ print(article_citation, .opts = list(style = 'Bibtex'))
 
 ```{r, results='asis'}
 gloss_file_name <- getOption('lingglosses.glosses_list')
-if(file.exists(gloss_file_name) && file.size(gloss_file_name) > 0){'## List of glosses'}
+if(file.exists(gloss_file_name) && file.size(gloss_file_name) > 0){cat('## List of glosses')}
 ```
+
 ```{r}
 make_gloss_list()
 ```

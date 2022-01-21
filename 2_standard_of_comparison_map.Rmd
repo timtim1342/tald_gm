@@ -46,8 +46,9 @@ print(article_citation, .opts = list(style = 'Bibtex'))
 
 ```{r, results='asis'}
 gloss_file_name <- getOption('lingglosses.glosses_list')
-if(file.exists(gloss_file_name) && file.size(gloss_file_name) > 0){'## List of glosses'}
+if(file.exists(gloss_file_name) && file.size(gloss_file_name) > 0){cat('## List of glosses')}
 ```
+
 ```{r}
 make_gloss_list()
 ```
