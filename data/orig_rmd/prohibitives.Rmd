@@ -34,7 +34,7 @@ The following 24 languages belong to this category:
 While the suffixes, prefixes and infixes encode only prohibition, some additional remarks are necessary about the circumfixes used in Agul, Kryz, Lak, and Tabasaran. The prefixal part of the circumfix (*mV-* in all four languages) is the specialised prohibitive marker, while the functions of the suffixal parts are more diverse. For Lak, the case is rather clear: the suffixes *-ara* and *-ari* mark prohibition and, additionally, second person singular or plural (@one).
 
 (@one) Lak [@zhirkov1955: 119]
-```{r}
+```{r, results='asis'}
 gloss_example("**ma**-čič-**ara** **ma**-čič-**ari**",
               "PROH-write-PROH.SG PROH-write-PROH.PL",
               "Don't write!", line_length = 20)
@@ -43,14 +43,14 @@ gloss_example("**ma**-čič-**ara** **ma**-čič-**ari**",
 In Agul (@two) and Tabasaran (@three), the suffixes *-an* and *-an-aj* are less transparent. The imperative is traditionally formed by attaching these suffixes to the verb stem; in modern Agul and Tabasaran, however, the second person singular imperative is reduced to the bare stem, while the second person plural form is marked by *-aj*, i.e. *-an* is dismissed in both forms. In the prohibitive, *-an* is still obligatory, both in the singular and in the plural. This leads to two possible interpretations: Either the prohibitive is formed by prefixing the traditional imperatives (marked for number) with *mV-*, or the prohibitive has a specialised circumfixal marker *mV-…-an/-an-aj* which is attached to the bare stem. We opted for the second interpretation, as the contemporary languages use *-an* only for the prohibitive, i.e. the functional range of *-an* seems to have narrowed down to negative contexts.
 
 (@two) Agul [@magometov1970: 141]
-```{r results='asis'}
+```{r, results='asis'}
 gloss_example("**ma**-χur-**an** **ma**-χur-**an-aj**",
               "PROH-read-PROH PROH-read-PROH-PL",
               "Don't read!", line_length = 20)
 ```
 
 (@three) Tabasaran [@alekseevshixalieva2003: 70]
-```{r}
+```{r, results='asis'}
 gloss_example("**mu**-ulup-an **mu**-ulup-**an-aj**",
               "PROH-show-PROH PROH-show-PROH-PL",
               "Don't show!", line_length = 20)
