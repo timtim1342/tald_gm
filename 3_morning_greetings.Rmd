@@ -12,11 +12,10 @@ knitr::opts_chunk$set(echo = FALSE, message = FALSE, comment = '')
 
 See [data and maps](morning_greetings_map.html).
 
-```{r, child='data/orig_rmd/morning_greetings.Rmd'}
-```
-
 ```{r}
-article_citation <- RefManageR::BibEntry(bibtype = 'Incollection', 
+library(RefManageR)
+BibOptions(check.entries = FALSE, style = 'text', bib.style = 'authoryear')
+article_citation <- BibEntry(bibtype = 'Incollection', 
  key='naccarato2021',
  title='Morning greetings',
  author='Chiara Naccarato, Samira Verhees',
@@ -29,8 +28,8 @@ article_citation <- RefManageR::BibEntry(bibtype = 'Incollection',
 ```
 
 ## {.tabset .tabset-fade .tabset-pills} 
-### Plain text
 
+### Plain text
 ```{r, results = 'asis'}
 print(article_citation, .opts = list(style = 'text'))
 ```
@@ -39,6 +38,9 @@ print(article_citation, .opts = list(style = 'text'))
 
 ```{r}
 print(article_citation, .opts = list(style = 'Bibtex'))
+```
+
+```{r, child='data/orig_rmd/morning_greetings.Rmd'}
 ```
 
 ## References
