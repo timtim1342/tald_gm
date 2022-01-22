@@ -1,4 +1,4 @@
-suppressPackageStartupMessages(library(tidyverse))
+library(tidyverse)
 library(testthat)
 
 test_that("Test column names and separator in data:
