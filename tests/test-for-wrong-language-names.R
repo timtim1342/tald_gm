@@ -12,22 +12,26 @@ match with `../data/genlangpoints.csv`", {
     sort() ->
     expected_langs
   
-  observed <- map_chr(list.files("../data/orig_table", full.names = TRUE), function(table){
-    read_tsv(table,
+  map_dfr(list.files("../data/orig_table", full.names = TRUE), function(tsv){
+    read_tsv(tsv,
              progress = FALSE, 
              show_col_types = FALSE) %>% 
       distinct(lang) %>% 
-      pull(lang) ->
-      langs_from_table
-    wrong_langs <- langs_from_table[which(!(langs_from_table %in% expected_langs))]
-    ifelse(length(wrong_langs) > 0, 
-           str_c("Wrong language names in the dataset ", 
-                 str_remove(table, "../data/orig_table/"), ": ", 
-                 str_c(wrong_langs, collapse = ", ")), 
-           str_c("The dataset ", 
-                 str_remove(table, "../data/orig_table/"), 
-                 " is ok"))
-  })
-  expect_equal(observed, 
-               str_c("The dataset ", list.files("../data/orig_table"), " is ok"))
+      mutate(file = tsv, 
+             file = str_remove(file, "../data/orig_table/")) %>% 
+      filter(!(lang %in% expected_langs))
+  }) ->
+    wrong_langs_df
+
+  if(nrow(wrong_langs_df) > 0){
+    observed <- str_c("The wrong langage name ", 
+                      wrong_langs_df$lang, 
+                      " in the file ",
+                      wrong_langs_df$file)
+    expected <- rep("", nrow(wrong_langs_df))
+  } else {
+    observed <- "everything is ok"
+    expected <- "everything is ok"
+  }
+  expect_equal(observed, expected)    
 })

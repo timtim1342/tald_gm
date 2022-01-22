@@ -24,17 +24,15 @@ test_that("Test bibkeys in articles:", {
     filter(!detected) ->
     refs_absent_in_bib
   
-  observed <- if(nrow(refs_absent_in_bib) > 0){
-    str_c("There is no bibentry ", refs_absent_in_bib$refs, " in the ", 
-          refs_absent_in_bib$files, ".bib")
+  if(nrow(refs_absent_in_bib) > 0){
+    observed <- str_c("The BibTeX entry ", 
+                      refs_absent_in_bib$refs, 
+                      " is absent in the ",
+                      refs_absent_in_bib$files)
+    expected <- rep("", nrow(refs_absent_in_bib))
   } else {
-    "everything is ok"
+    observed <- "everything is ok"
+    expected <- "everything is ok"
   }
-  
-  expected <- if(nrow(refs_absent_in_bib) > 0){
-    rep("everything is ok", nrow(refs_absent_in_bib))
-  } else {
-    "everything is ok"
-  }
-  expect_equal(observed, expected)
+  expect_equal(observed, expected)    
 })
