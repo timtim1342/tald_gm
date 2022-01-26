@@ -225,3 +225,9 @@ The distribution of values across languages is represented on maps. [Map 1](stan
 [^5]: In Hinuq, the superelative -*ƛ'o-s* is used by younger speakers in constructions expressing difference in age [@forker2019].
 [^6]: It should be noted that the labels employed here for localization markers do not always coincide with the labels employed in the sources consulted. This mostly concerns the Russian-language literature, in which such labels are rarely employed (in most Russian-language grammars different localization markers are listed by simply naming them “series 1”, “series 2”, etc.). For more details on the semantics of localization markers, see [Spatial cases].
 [^7]: [@forker2020dargwa: 66] lists several variants for the localization marker that appears in comparative forms: -*le*- / -*ja*- / -*a*-. This marker is labeled as LOC, and is described as “a general location marker that expresses the most common location of a figure with respect to the ground”. Its semantics seems comparable to that of SUPER markers in other Dargwa languages, so we include Sanzhi in this group.
+
+## List of glosses
+
+```{r}
+make_gloss_list()
+```

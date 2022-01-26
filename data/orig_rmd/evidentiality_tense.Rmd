@@ -106,3 +106,9 @@ Despite the striking distribution of these features, a number of factors prevent
 - [The perfect](perfect.html)
 - [Reported speech particles](particles.html)
 - [Evidential auxiliaries](:())
+
+## List of glosses
+
+```{r}
+make_gloss_list()
+```

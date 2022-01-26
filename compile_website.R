@@ -17,7 +17,6 @@ map(list.files("data/orig_bib_tsv", full.names = TRUE), function(bib_tsv){
                      str_replace("_bib$", "\\.bib"))
   })
 
-
 # read our fetures data ----------------------------------------------------
 features <- read_tsv("data/features.csv", 
                      progress = FALSE, 
@@ -37,6 +36,33 @@ rmd_filenames <- c(str_c(features$id_0, features$filename, ".Rmd"))
 
 # create key for bibtex ----------------------------------------------------
 first_authors <- tolower(str_remove(map(str_split(features$author, " "), 2), ","))
+
+# create orig_rmd/..._map.Rmd files ----------------------------------------------------
+
+map(rmd_filenames[str_detect(rmd_filenames, "_map.Rmd")], function(i){
+  write_lines(
+    c("
+##
+
+```{r}
+library(tidyverse)
+",
+str_c('df <- read_tsv("../orig_table/', 
+      str_remove(str_remove(i, "_map.Rmd"), "\\d{1,}_"),
+      '.tsv")'),
+"
+bib <- ReadBib(file = '../bibliography.bib')
+df %>% 
+  select(lang, idiom, source, page) %>% 
+  rename(language = lang) %>% 
+  rowwise() %>% 
+  mutate(source = Cite(bib, source)) %>% 
+  DT::datatable()
+```
+"),
+    file = str_c("data/orig_rmd/", str_remove(i, "\\d{1,}_"))
+  )
+})
 
 # create Rmd files ---------------------------------------------------------
 options(ymlthis.rmd_body = "
@@ -107,24 +133,18 @@ map(seq_along(rmd_filenames), function(i){
     "```",
     # add text of the Rmd
     "",
-    ifelse(str_detect(rmd_filenames[i], "_map.Rmd"), 
-           "```{r}",
-           str_c("```{r, child='data/orig_rmd/", features$filename[i], ".Rmd'}")),
-    "```",
-    "",
-    # do not print "## List of glosses", if there is no glosses
-    "```{r, results='asis'}",
-    "gloss_file_name <- getOption('lingglosses.glosses_list')",
-    "if(file.exists(gloss_file_name) && file.size(gloss_file_name) > 0){cat('## List of glosses')}",
-    "```",
-    "",
-    # make a gloss list
-    "```{r}",
-    "make_gloss_list()",
+    str_c("```{r, child='data/orig_rmd/", features$filename[i], ".Rmd'}"),
     "```",
     "",
     # add refferences
-    "## References"),
+    "## References",
+    "",
+    "```{r, results='asis'}",
+    ifelse(str_detect(rmd_filenames[i], "_map.Rmd"), 
+           "PrintBibliography(bib)",
+           ""),
+    "```",
+    ""),
     rmd_filenames[i], append = TRUE)
 })
 

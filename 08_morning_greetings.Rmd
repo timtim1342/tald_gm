@@ -44,13 +44,9 @@ print(article_citation, .opts = list(style = 'Bibtex'))
 ```{r, child='data/orig_rmd/morning_greetings.Rmd'}
 ```
 
-```{r, results='asis'}
-gloss_file_name <- getOption('lingglosses.glosses_list')
-if(file.exists(gloss_file_name) && file.size(gloss_file_name) > 0){cat('## List of glosses')}
-```
-
-```{r}
-make_gloss_list()
-```
-
 ## References
+
+```{r, results='asis'}
+
+```
+

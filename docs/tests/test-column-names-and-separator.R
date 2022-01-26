@@ -1,4 +1,4 @@
-suppressPackageStartupMessages(library(tidyverse))
+library(tidyverse)
 library(testthat)
 
 test_that("Test column names and separator in data:
@@ -28,19 +28,20 @@ columns listed in `expected_columns`", {
                                show_col_types = FALSE))
   }) 
   check_col_names %>% 
-    mutate(Var2 = str_remove(Var2, "../data/orig_table/"),
-           observed = str_c("column ", 
-                            Var1,
-                            " is absent in the file ",
-                            Var2,
-                            ": ",
-                            as.character(!observed)),
-           expected = str_c("column ", 
-                            Var1,
-                            " is absent in the file ", 
-                            Var2,
-                            ": FALSE")) ->
-    check_col_names
+    mutate(Var2 = str_remove(Var2, "../data/orig_table/")) %>% 
+    filter(!observed) ->
+    absent_columns
   
-  expect_equal(check_col_names$observed, check_col_names$expected)
+  if(nrow(absent_columns) > 0){
+    observed <- str_c("The obligatory column ", 
+                      absent_columns$Var1, 
+                      " is absent in the file ",
+                      absent_columns$Var2)
+    expected <- rep("", nrow(absent_columns))
+  } else {
+    observed <- "everything is ok"
+    expected <- "everything is ok"
+  }
+  expect_equal(observed, expected)    
+
 })

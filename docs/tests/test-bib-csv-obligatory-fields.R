@@ -45,9 +45,7 @@ test_that("Test column names in the fields in bibtex tsvs", {
 
 test_that("Test CATEGORY field in bibtex tsvs:
 see https://en.wikipedia.org/wiki/BibTeX for the details.", {
-  df <- map_dfr(list.files("../data/orig_bib_tsv", full.names = TRUE), function(i){
-    read_tsv(i) %>% 
-      mutate(filename = i)})
+  df <- map_dfr(list.files("../data/orig_bib_tsv", full.names = TRUE), read_tsv)
   bad_category <- df[which(!(df$CATEGORY %in% c("article", "book", "booklet", 
                                                 "conference", "inbook", 
                                                 "incollection", "inproceedings", 
@@ -61,8 +59,6 @@ see https://en.wikipedia.org/wiki/BibTeX for the details.", {
   if(nrow(bad_category) > 0){
     observed <- str_c("The BibTeX entry ", 
                       bad_category$BIBTEXKEY, 
-                      " from ",
-                      str_remove(bad_category$filename, ".*/"), 
                       " has the wrong CATEGORY value: ",
                       bad_category$CATEGORY)
     expected <- rep("", nrow(bad_category))
@@ -75,106 +71,104 @@ see https://en.wikipedia.org/wiki/BibTeX for the details.", {
 
 test_that("Test obligatory fields in bibtex tsvs:
 see https://en.wikipedia.org/wiki/BibTeX for the details.", {
-  df <- map_dfr(list.files("../data/orig_bib_tsv", full.names = TRUE), function(i){
-    read_tsv(i) %>% 
-      mutate(filename = i)})
+  df <- map_dfr(list.files("../data/orig_bib_tsv", full.names = TRUE), read_tsv)
   
   df %>% 
     filter(CATEGORY == "article") %>% 
-    select(BIBTEXKEY, AUTHOR, TITLE, JOURNAL, YEAR, VOLUME, filename) %>% 
+    select(BIBTEXKEY, AUTHOR, TITLE, JOURNAL, YEAR, VOLUME) %>% 
     filter(if_any(everything(), is.na)) %>% 
     mutate_all(as.character) %>% 
-    pivot_longer(names_to = "field", values_to = "value", -c(BIBTEXKEY, filename)) %>% 
+    pivot_longer(names_to = "field", values_to = "value", -BIBTEXKEY) %>% 
     filter(is.na(value)) ->
     article_fields
   
   df %>% 
     filter(CATEGORY == "book") %>% 
-    select(BIBTEXKEY, TITLE, PUBLISHER, YEAR, filename) %>% 
+    select(BIBTEXKEY, TITLE, PUBLISHER, YEAR) %>% 
     filter(if_any(everything(), is.na)) %>% 
     mutate_all(as.character) %>% 
-    pivot_longer(names_to = "field", values_to = "value", -c(BIBTEXKEY, filename)) %>% 
+    pivot_longer(names_to = "field", values_to = "value", -BIBTEXKEY) %>% 
     filter(is.na(value)) ->
     book_fields
   
   df %>% 
     filter(CATEGORY == "booklet") %>% 
-    select(BIBTEXKEY, TITLE, filename) %>% 
+    select(BIBTEXKEY, TITLE) %>% 
     filter(if_any(everything(), is.na)) %>% 
     mutate_all(as.character) %>% 
-    pivot_longer(names_to = "field", values_to = "value", -c(BIBTEXKEY, filename)) %>% 
+    pivot_longer(names_to = "field", values_to = "value", -BIBTEXKEY) %>% 
     filter(is.na(value)) ->
     booklet_fields
   
   df %>% 
     filter(CATEGORY == "conference") %>% 
-    select(BIBTEXKEY, AUTHOR, TITLE, BOOKTITLE, YEAR, filename) %>% 
+    select(BIBTEXKEY, AUTHOR, TITLE, BOOKTITLE, YEAR) %>% 
     filter(if_any(everything(), is.na)) %>% 
     mutate_all(as.character) %>% 
-    pivot_longer(names_to = "field", values_to = "value", -c(BIBTEXKEY, filename)) %>% 
+    pivot_longer(names_to = "field", values_to = "value", -BIBTEXKEY) %>% 
     filter(is.na(value)) ->
     conference_fields
   
   df %>% 
     filter(CATEGORY == "inbook") %>% 
-    select(BIBTEXKEY, TITLE, PUBLISHER, YEAR, filename) %>% 
+    select(BIBTEXKEY, TITLE, PUBLISHER, YEAR) %>% 
     filter(if_any(everything(), is.na)) %>% 
     mutate_all(as.character) %>% 
-    pivot_longer(names_to = "field", values_to = "value", -c(BIBTEXKEY, filename)) %>% 
+    pivot_longer(names_to = "field", values_to = "value", -BIBTEXKEY) %>% 
     filter(is.na(value)) ->
     inbook_fields
   
   df %>% 
     filter(CATEGORY == "incollection") %>% 
-    select(BIBTEXKEY, AUTHOR, TITLE, BOOKTITLE, PUBLISHER, YEAR, filename) %>% 
+    select(BIBTEXKEY, AUTHOR, TITLE, BOOKTITLE, PUBLISHER, YEAR) %>% 
     filter(if_any(everything(), is.na)) %>% 
     mutate_all(as.character) %>% 
-    pivot_longer(names_to = "field", values_to = "value", -c(BIBTEXKEY, filename)) %>% 
+    pivot_longer(names_to = "field", values_to = "value", -BIBTEXKEY) %>% 
     filter(is.na(value)) ->
     incollection_fields
   
   df %>% 
     filter(CATEGORY == "inproceedings") %>% 
-    select(BIBTEXKEY, AUTHOR, TITLE, BOOKTITLE, YEAR, filename) %>% 
+    select(BIBTEXKEY, AUTHOR, TITLE, BOOKTITLE, YEAR) %>% 
     filter(if_any(everything(), is.na)) %>% 
     mutate_all(as.character) %>% 
-    pivot_longer(names_to = "field", values_to = "value", -c(BIBTEXKEY, filename)) %>% 
+    pivot_longer(names_to = "field", values_to = "value", -BIBTEXKEY) %>% 
     filter(is.na(value)) ->
     inproceedings_fields
   
   df %>% 
     filter(CATEGORY == "manual") %>% 
-    select(BIBTEXKEY, TITLE, filename) %>% 
+    select(BIBTEXKEY, TITLE) %>% 
     filter(if_any(everything(), is.na)) %>% 
     mutate_all(as.character) %>% 
-    pivot_longer(names_to = "field", values_to = "value", -c(BIBTEXKEY, filename)) %>% 
+    pivot_longer(names_to = "field", values_to = "value", -BIBTEXKEY) %>% 
     filter(is.na(value)) ->
     manual_fields
   
   df %>% 
     filter(CATEGORY == "mastersthesis") %>% 
-    select(BIBTEXKEY, AUTHOR, TITLE, SCHOOL, YEAR, filename) %>% 
+    select(BIBTEXKEY, AUTHOR, TITLE, SCHOOL, YEAR) %>% 
     filter(if_any(everything(), is.na)) %>% 
     mutate_all(as.character) %>% 
-    pivot_longer(names_to = "field", values_to = "value", -c(BIBTEXKEY, filename)) %>% 
+    pivot_longer(names_to = "field", values_to = "value", -BIBTEXKEY) %>% 
     filter(is.na(value)) ->
     mastersthesis_fields
 
   df %>% 
     filter(CATEGORY == "phdthesis") %>% 
-    select(BIBTEXKEY, AUTHOR, TITLE, SCHOOL, YEAR, filename) %>% 
+    select(BIBTEXKEY, AUTHOR, TITLE, SCHOOL, YEAR) %>% 
     filter(if_any(everything(), is.na)) %>% 
     mutate_all(as.character) %>% 
-    pivot_longer(names_to = "field", values_to = "value", -c(BIBTEXKEY, filename)) %>% 
+    pivot_longer(names_to = "field", values_to = "value", -BIBTEXKEY) %>% 
     filter(is.na(value)) ->
     phdthesis_fields
 
   df %>% 
     filter(CATEGORY == "proceedings") %>% 
-    select(BIBTEXKEY, TITLE, YEAR, filename) %>% 
+    select(BIBTEXKEY, TITLE, YEAR) %>% 
     filter(if_any(everything(), is.na)) %>% 
     mutate_all(as.character) %>% 
-    pivot_longer(names_to = "field", values_to = "value", -c(BIBTEXKEY, filename)) %>% 
+    pivot_longer(names_to = "field", values_to = "value", -BIBTEXKEY) %>% 
     filter(is.na(value)) ->
     proceedings_fields
   
@@ -185,16 +179,16 @@ see https://en.wikipedia.org/wiki/BibTeX for the details.", {
   #   select(BIBTEXKEY, AUTHOR, TITLE, INSTITUTION, YEAR) %>%
   #   filter(if_any(everything(), is.na)) %>%
   #   mutate_all(as.character) %>% 
-  #   pivot_longer(names_to = "field", values_to = "value", -c(BIBTEXKEY, filename)) %>% 
+  #   pivot_longer(names_to = "field", values_to = "value", -BIBTEXKEY) %>% 
   #   filter(is.na(value)) ->
   #   techreport_fields
   
   df %>% 
     filter(CATEGORY == "unpublished") %>% 
-    select(BIBTEXKEY, AUTHOR, TITLE, filename) %>% 
+    select(BIBTEXKEY, AUTHOR, TITLE) %>% 
     filter(if_any(everything(), is.na)) %>% 
     mutate_all(as.character) %>% 
-    pivot_longer(names_to = "field", values_to = "value", -c(BIBTEXKEY, filename)) %>% 
+    pivot_longer(names_to = "field", values_to = "value", -BIBTEXKEY) %>% 
     filter(is.na(value)) ->
     unpublished_fields
   
@@ -215,8 +209,6 @@ see https://en.wikipedia.org/wiki/BibTeX for the details.", {
   if(nrow(wrong_fields) > 0){
     observed <- str_c("The BibTeX entry ", 
                       wrong_fields$BIBTEXKEY, 
-                      " from the file ",
-                      str_remove(wrong_fields$filename, ".*/"), 
                       " has an empty value in the obligatory field ",
                       wrong_fields$field)
     expected <- rep("", nrow(wrong_fields))

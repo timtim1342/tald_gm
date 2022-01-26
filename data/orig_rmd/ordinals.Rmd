@@ -62,3 +62,9 @@ As for the other functions of ordinal markers in the languages, the distribution
 The distribution of the ‘say’ strategy clearly demonstrates an areal signal: the areas in which the ‘say’ strategy is absent lie in the areas contiguous with non-East Caucasian languages. The strategy is absent in the north of the area, i.e. in Nakh and most Andic languages; it is also absent in the East (but not West) Tsezic languages in the west, that are contiguous with Georgian. Khinalug, which is isolated from the rest of the family, also lacks the ‘say’ strategy. In the south of the area, the greater level of grammaticalization (phonetic erosion) is attested in the languages that are located the most closely to Azerbaijani.
 
 It appears that genealogical relations between the East Caucasian languages play a role in the distribution of the ‘say’ strategy as well. All Lezgic languages (with the exception of Udi) have the ‘say’ strategy; this is also the case for Dargwa and Tsezic languages (with the exception of Hunzib). By contrast, Nakh languages lack the ‘say’ strategy altogether; this is also true of Andic languages (except Akhvakh). 
+
+## List of glosses
+
+```{r}
+make_gloss_list()
+```

@@ -41,16 +41,12 @@ print(article_citation, .opts = list(style = 'text'))
 print(article_citation, .opts = list(style = 'Bibtex'))
 ```
 
-```{r}
-```
-
-```{r, results='asis'}
-gloss_file_name <- getOption('lingglosses.glosses_list')
-if(file.exists(gloss_file_name) && file.size(gloss_file_name) > 0){cat('## List of glosses')}
-```
-
-```{r}
-make_gloss_list()
+```{r, child='data/orig_rmd/perfect_map.Rmd'}
 ```
 
 ## References
+
+```{r, results='asis'}
+PrintBibliography(bib)
+```
+

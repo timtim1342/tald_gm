@@ -33,6 +33,14 @@
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<script src="site_libs/htmlwidgets-1.5.4/htmlwidgets.js"></script>
+<link href="site_libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet" />
+<script src="site_libs/datatables-binding-0.20/datatables.js"></script>
+<link href="site_libs/dt-core-1.11.3/css/jquery.dataTables.min.css" rel="stylesheet" />
+<link href="site_libs/dt-core-1.11.3/css/jquery.dataTables.extra.css" rel="stylesheet" />
+<script src="site_libs/dt-core-1.11.3/js/jquery.dataTables.min.js"></script>
+<link href="site_libs/crosstalk-1.2.0/css/crosstalk.min.css" rel="stylesheet" />
+<script src="site_libs/crosstalk-1.2.0/js/crosstalk.min.js"></script>
 <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
 <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
@@ -305,8 +313,55 @@ $(document).ready(function () {
 }</code></pre>
 </div>
 </div>
+<div id="section-1" class="section level2">
+<h2></h2>
+<div id="htmlwidget-32c797859f1d43e3755c" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-32c797859f1d43e3755c">{"x":{"filter":"none","vertical":false,"data":[["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31","32","33","34","35","36","37","38","39","40","41","42","43","44","45","46","47","48","49","50","51","52","53","54","55","56","57","58","59","60","61","62","63","64","65","66","67","68","69"],["Agul","Akhvakh","Akhvakh","Akhvakh","Andi","Archi","Archi","Armenian","Avar","Avar","Avar","Azerbaijani","Bagvalal","Tsova-Tush","Bezhta","Botlikh","Budukh","Chamalal","Chechen","Chechen","Chechen","Dargwa","Dargwa","Dargwa","Dargwa","Dargwa","Dargwa","Dargwa","Dargwa","Dargwa","Dargwa","Georgian","Godoberi","Godoberi","Godoberi","Hinuq","Hunzib","Ingush","Ingush","Karata","Karata","Karata","Karata","Karata","Khinalug","Khwarshi","Khwarshi","Kryz","Kumyk","Kumyk","Kumyk","Kumyk","Lak","Lak","Lak","Lezgian","Nogai","Nogai","Rutul","Rutul","Rutul","Rutul","Tabasaran","Tat","Tat","Tindi","Tsakhur","Tsez","Udi"],["Huppuq'","Northern Akhvakh","Northern Akhvakh","Northern Akhvakh","Andi","Archib","Archib","Modern Eastern Armenian","Standard Avar","Standard Avar","Standard Avar","Standard Azerbaijani","Kvanada","Zemo-Alvani","Bezhta","Botlikh","Budukh","Lower Gakvari","Standard Chechen","Standard Chechen","Standard Chechen","Standard Dargwa","Standard Dargwa","Mehweb","Mehweb","Itsari","Itsari","Kubachi","Kubachi","Tanty","Tanty","Standard Georgian","Godoberi","Godoberi","Godoberi","Hinuq","Hunzib","Standard Ingush","Standard Ingush","Karata","Karata","Karata","Anchiq","Anchiq","Khinalug","Kwantlada",null,"Alik","Standard Kumyk","Standard Kumyk","Standard Kumyk","Standard Kumyk","Standard Lak","Standard Lak","Standard Lak","Standard Lezgian","Standard Nogai","Standard Nogai","Mukhad","Mukhad","Standard Rutul","Kina","Standard Tabasaran","Judeo-Tat","Judeo-Tat","Tindi","Mishlesh","Kidero","Nizh"],["(Майсак and Мерданова, 2002b)","","","(Магомедбекова, 1967)","(Cercvadze, 1965)","","","(Dum-Tragut, 2009)","(Алексеев, Атаев, Магомедов, Магомедов, Мадиева, Саидова, and Самедов, 2012)","(Маллаева, 2007)","(Маллаева, 2007)","(Ширалиев and Севортян, 1971)","(Кибрик, Казенин, Лютикова, and Татевосов, 2001)","(Holisky and Gagua, 1994)","(Comrie, Khalilov, and Khalilova, 2015)","","(Талибов, 2007)","(Магомедова, 1999)","(Dobrushina, 2011)","(Dobrushina, 2011)","(Dobrushina, 2011)","(Абдуллаев, 1954)","(Абдуллаев, 1954)","(Dobrushina, 2019)","(Dobrushina, 2019)","(Sumbatova and Mutalov, 2003)","(Sumbatova and Mutalov, 2003)","(Магометов, 1963)","(Магометов, 1963)","(Сумбатова and Ландер, 2014)","(Сумбатова and Ландер, 2014)","(Hewitt, 1995)","(Kibrik, Tatevosov, and Eulenberg, 1996)","(Саидова, 2006)","(Саидова, 2006)","(Forker, 2019a)","(van den\nBerg, 1995)","(Nichols, 2011)","(Nichols, 2011)","(Магомедова and Халидова, 2001)","(Магомедова and Халидова, 2001)","(Магомедбекова, 1971)","(Гаджимагомедов, 2019)","(Гаджимагомедов, 2019)","(Дешериев, 1959)","(Khalilova, 2009)","(Джидалаев, Магомедова, and Халилов, 2022)","(Authier, 2009)","(Абдуллаева, Гаджиахмедов, Кадыраджиев, Керимов, Ольмесов, and Хангишиев, 2014)","","(Гаджиахмедов, 2000)","(Гаджиахмедов, 2000)","(Казенин, 2013)","(Эльдарова, 1995)","","(Haspelmath, 1993)","(Мусаев, 2018)","(Гаджиахмедов, 2000)","(Махмудова, 2002)","(Махмудова, 2002)","(Алисултанов and Сулейманова, 2019)","","","(Authier, 2012)","(Authier, 2012)","","","(Бокарёв, 1959a)","(Майсак, 2008)"],["6, 45","15,16","15,16","95, 98","362 ,363, 364",null,null,"190,193","224, 225","71","70-71","47","97-98, 327--331",null,"382--383",null,"207","428","124","124","124","165, 174","172","138","138","72","123","204--205","235","146","132--134","254--258, 572","49, 56","194",null,"230--231","88","277, 372","276","188",null,"138",null,null,null,"250--252",null,"149--150","287--292",null,null,null,"270--271","17","117--119; 271","128, 151",null,null,"162","162","48, 64",null,"66; 71","176","176","168; 566",null,"210","131, 153--154"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>language<\/th>\n      <th>idiom<\/th>\n      <th>source<\/th>\n      <th>page<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"order":[],"autoWidth":false,"orderClasses":false,"columnDefs":[{"orderable":false,"targets":0}]}},"evals":[],"jsHooks":[]}</script>
+</div>
 <div id="references" class="section level2">
 <h2>References</h2>
+<p>Authier, G. (2009). <em>Grammaire kryz</em>. Paris: Peeters.</p>
+<p>Authier, G. (2012). <em>Grammaire juhuri, ou judéo-tat, langue iranienne des Juifs du Caucase de l’est</em>. Wiesbaden: Dr. Ludwig Reichert Verlag Wiesbaden.</p>
+<p>Berg, H. van den (1995). <em>A grammar of Hunzib</em>. Munich: Lincom.</p>
+<p>Cercvadze, I. I. (1965). <em>Andiuri ena [The Andi language]</em>. Tbilisi: Mecniereba.</p>
+<p>Comrie, B., M. Khalilov, and Z. Khalilova (2015). <em>A grammar of Bezhta</em>. Leipzig: Max Planck Institute for Evolutionary Anthropology.</p>
+<p>Dobrushina, N. (2011). “The optative domain in East Caucasian languages.” In: <em>Tense, aspect, modality and finiteness in East Caucasian languages</em>. Ed. by G. Authier and T. Maisak. Bochum: Brockmeyer, pp. 95-130.</p>
+<p>Dobrushina, N. (2019). “Moods of Mehweb.” In: <em>The Mehweb language. Essays on phonology, morphology and syntax</em>. Ed. by M. Daniel, N. Dobrushina and D. Ganenkov. Berlin: Language Science Press, pp. 117-165.</p>
+<p>Dum-Tragut, J. (2009). <em>Armenian</em>. Amsterdam/Philadelphia: John Benjamins.</p>
+<p>Forker, D. (2019a). “The impact of language contact on Hinuq: Phonology, morphology, syntax, and lexicon.” In: <em>Language Typology and Universals</em> 72.2, pp. 29-62.</p>
+<p>Haspelmath, M. (1993). <em>A grammar of Lezgian</em>. Berlin/New York: Mouton de Gruyter.</p>
+<p>Hewitt, G. (1995). <em>Georgian. A Structural Reference Grammar</em>. Vol. 2. London: School of Oriental and African Studies, University of London.</p>
+<p>Holisky, D. A. and R. Gagua (1994). “Tsova-Tush (Batsbi).” In: <em>The indigenous languages of the Caucasus. Volume 4. Part 2</em>. Ed. by R. Smeets. Delmar NY: Caravan Books, pp. 147-212.</p>
+<p>Khalilova, Z. (2009). “A grammar of Khwarshi.”</p>
+<p>Kibrik, A., S. Tatevosov, and A. Eulenberg (1996). <em>Godoberi</em>. Munich/Newcastle: Lincom Europa.</p>
+<p>Nichols, J. (2011). <em>Ingush grammar</em>. Berkeley/Los Angeles: University of California Press.</p>
+<p>Sumbatova, N. R. and R. O. Mutalov (2003). <em>A Grammar of Icari Dargwa</em>. Munich: Lincom Europa.</p>
+<p>Абдуллаев, С. Н. (1954). <em>Грамматика даргинского языка [Dargwa grammar]</em>. Махачкала: ИЯЛИ.</p>
+<p>Абдуллаева, А. З., Н. Э. Гаджиахмедов, К. С. Кадыраджиев, et al. (2014). <em>Современный кумыкский язык [Contemporary Kumyk]</em>. Махачкала: ИЯЛИ.</p>
+<p>Алексеев, М. Е., Б. М. Атаев, М. А. Магомедов, et al. (2012). <em>Современный аварский язык [Contemporary Avar language]</em>. Махачкала: Aleph.</p>
+<p>Алисултанов, А. С. and Т. А. Сулейманова (2019). <em>Рутульско-русский словарь [Rutul-Russian dictionary]</em>. Махачкала: АЛЕФ.</p>
+<p>Бокарёв, Е. А. (1959a). <em>Цезские (дидойские) языки Дагестана [Tsezic (Didoic) languages of Daghestan]</em>. Москва: Академия.</p>
+<p>Гаджиахмедов, Н. Э. (2000). <em>Словоизменительные категории имени и глагола в кумыкском языке [Nominal and verbal inflectional categories in Kumyk]</em>. Махачкала: Юпитер.</p>
+<p>Гаджимагомедов, М. З. (2019). “Анчихский язык [Anchiq].” manuscript.</p>
+<p>Дешериев, Ю. Д. (1959). <em>Грамматика хиналугского языка [Khinalug grammar]</em>. Москва: Академия.</p>
+<p>Джидалаев, Н. С., З. Д. Магомедова, and М. Ш. Халилов (2022). “Словарь хваршинского языка [Khwarshi dictionary].” Махачкала.</p>
+<p>Казенин, К. И. (2013). <em>Синтаксис современного лакского языка [Syntax of contemporary Lak]</em>. Махачкала: ИЯЛИ.</p>
+<p>Кибрик, А. Е., К. И. Казенин, Е. А. Лютикова, et al. (2001). <em>Багвалинский язык. Грамматика, тексты, словари [The Bagvalal language. Grammar, texts, dictionary]</em>. Москва: Наследие.</p>
+<p>Магомедбекова, З. М. (1967). <em>Ахвахский язык [Akhvakh]</em>. Тбилиси: Мецниереба.</p>
+<p>Магомедбекова, З. М. (1971). <em>Каратинский язык [Karata]</em>. Тбилиси: Мецниереба.</p>
+<p>Магомедова, П. Т. (1999). <em>Чамалинско-русский словарь [Chamalal-Russian dictionary]</em>. Махачкала: ИЯЛИ.</p>
+<p>Магомедова, П. Т. and Р. Ш. Халидова (2001). <em>Каратинско-русский словарь [Karata-Russian dictionary]</em>. Махачкала: ИЯЛИ.</p>
+<p>Магометов, А. А. (1963). <em>Кубачинский язык [Kubachi]</em>. Тбилиси: Академия Наук Грузинской ССР.</p>
+<p>Майсак, Т. А. (2008). “Глагольная парадигма удинского языка (Ниджский диалект) [Verb paradigm in Udi (Nizh dialect)].” In: <em>Удинский сборник: грамматика, лексика, история языка [Udi. Grammar. Lexicon. History of the language]</em>. Ed. by М. Е. Алексеев, Т. А. Майсак, Д. С. Ганенков and Ю. А. Ландер. Москва: Академия, pp. 96-161.</p>
+<p>Майсак, Т. А. and С. Р. Мерданова (2002b). <em>Глагольная система хпюкского говора агульского языка [Verb system of Huppuk Agul]</em>. Manuscript. &lt;URL: <a href="http://www.lingvarium.org/maisak/publ/Maisak_Merdanova-2002-verb.pdf" class="uri">http://www.lingvarium.org/maisak/publ/Maisak_Merdanova-2002-verb.pdf</a>&gt;.</p>
+<p>Маллаева, З. М. (2007). <em>Глагол аварского языка: структура, семантика, функции [The verb in Avar: structure, semantics, functions]</em>. Махачкала: ИЯЛИ.</p>
+<p>Махмудова, С. М. (2002). “Грамматические классы слов и грамматические категории рутульского языка [Grammatical word classes and grammatical categories of Rutul].”</p>
+<p>Мусаев, К. М. (2018). <em>Ногайско-русский словарь [Nogai-Russian dictionary]</em>. Москва: Наука.</p>
+<p>Саидова, П. А. (2006). <em>Годоберинско-русский словарь [Godoberi-Russian dictionary]</em>. Махачкала: ДНЦ РАН Институт языка, литературы и искусства им. Г. Цадасы и Институт эволюционной антропологии им. М. Планка.</p>
+<p>Сумбатова, Н. Р. and Ю. А. Ландер (2014). <em>Даргинский говор селения Танты: грамматический очерк. Вопросы синтаксиса</em>. Москва: Языки славянской культуры.</p>
+<p>Талибов, Б. Б. (2007). <em>Будухский язык [Budukh]</em>. Москва: Академия.</p>
+<p>Ширалиев, М. Ш. and Э. В. Севортян (1971). <em>Грамматика азербайджанского языка (фонетика, морфология, синтаксис) [Azerbaijani grammar (phonetics, morphology, syntax)]</em>. Баку: Элм.</p>
+<p>Эльдарова, Р. Г. (1995). “Морфология лакского глагола [Morphology of the Lak verb].” Махачкала.</p>
 </div>
 
 <!DOCTYPE html>

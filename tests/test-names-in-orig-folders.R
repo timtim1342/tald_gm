@@ -10,6 +10,11 @@ names as in the `../data/features.csv`", {
     expected
   
   expect_equal(list.files("../data/orig_table"), str_c(expected, ".tsv"))
-  expect_equal(list.files("../data/orig_rmd"), str_c(expected, ".Rmd"))
   expect_equal(list.files("../data/orig_bib"), str_c(expected, ".bib"))
+  expect_equal(setdiff(list.files("../data/orig_rmd"), 
+                       list.files("../data/orig_rmd", pattern = "_map.Rmd")), 
+               str_c(expected, ".Rmd"))
 })
+
+
+

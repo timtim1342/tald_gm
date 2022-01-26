@@ -90,3 +90,9 @@ The areal distribution of the features is noisy, which probably results from des
 
 - [Evidentiality in the tense system](evidentiality_tense.html)
 - [Evidential auxiliaries]()
+
+## List of glosses
+
+```{r}
+make_gloss_list()
+```

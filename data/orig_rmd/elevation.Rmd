@@ -53,3 +53,8 @@ In languages with elevation affixes, the latter can usually be attached to every
 
 [^2]:In my sample there is only one such language.
 
+## List of glosses
+
+```{r}
+make_gloss_list()
+```

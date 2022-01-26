@@ -133,3 +133,9 @@ Table 2. Comparison of the prohibitive encoding strategies in the WALS and TALD 
 The languages of the TALD sample show a clear preference for the combination of non-imperative verb forms and a specialised prohibitive marker. The most common verb form is the bare stem, but other stem types such as present and past stems are also attested. Suffixes are the preferred affix type, but circumfixes, infixes and prefixes are also attested. 
 
 Language family is a good predictor for the encoding strategy: all Avar-Andic, Tsezic, and Dargwa varieties, almost all Lezgic languages, and the Lak isolate make use of the **non-imperative verb form + special prohibitive marker** strategy; all Nakh languages, Armenian (the only Indo-European language), the Khinalug isolate and one Lezgic language belong to the **regular imperative + special prohibitive marker** category; and only the agglutinative Turkic languages encode prohibitives with a **regular imperative + regular negation marker**. Also, the marker form (*mV* vs. other forms) is strongly dependent on the language family, with the Lezgic language Archi being the only exception to the rule.
+
+## List of glosses
+
+```{r}
+make_gloss_list()
+```
