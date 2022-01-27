@@ -32,7 +32,7 @@ gloss_example("nuc'a (žegi) **qan** **b-ugo**",
 
 [^1]: In East Caucasian certain present states are always rendered with a resultative form of an inchoative verb, because the languages lack a stative lexeme. These states include certain postures (‘standing’, ‘lying down’) and physical states (‘sleeping’, ‘being sick’). The exact inventory of such predicates in individual languages, as well as the set shared across the branches of the family, remains a topic for future investigation.
 
-The <b>resultative perfect</b>, illustrated in example (@three), represents a more progressed stage of grammaticalization. In contrast to the resultative proper it maintains the argument structure of the original lexical verb [@plungian2016: 10]. The result is a less stative predicate that is incompatible with adverbs of unlimited duration like `r gloss_example("žegi", "still", intext = TRUE)`. Resultative proper and resultative perfect can be expressed by distinct constructions or with the same form.
+The <b>resultative perfect</b>, illustrated in example (@three), represents a more progressed stage of grammaticalization. In contrast to the resultative proper it maintains the argument structure of the original lexical verb [@plungian2016: 10]. The result is a less stative predicate that is incompatible with adverbs of unlimited duration like <i>žegi</i> ‘still’. Resultative proper and resultative perfect can be expressed by distinct constructions or with the same form.
 
 (@three) Avar [@verhees2018: 263]
 ```{r}

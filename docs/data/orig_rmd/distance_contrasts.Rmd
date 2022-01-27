@@ -1,0 +1,20 @@
+## Number of contrasts
+
+Both mono- and polycentric demonstratives may distinguish more than two ways of distance contrasts.[^1] Some languages of the sample, in addition to distance-marked demonstratives, have a demonstrative that is neutral. For example, Ingush has the demonstratives *je* (proximal) and *dwaara* (non-proximal), and the demonstrative *yz*, which does not express distance contrast [^2] [@nichols2011: 179]. Systems with a neutral demonstrative have been classified as featuring a two-way contrast.
+
+[Maps](distance_contrasts_map.html) show the number of distance contrasts expressed by demonstratives. As presented on the map, demonstratives of all languages of the sample express either two- or three-way distance contrasts. Languages with a two-way opposition are less common than those with a three-way opposition: languages with the latter type of opposition are almost twice as many as the languages of the former type, see [Table 1](#m1). Languages belonging to the same branch are almost always dissimilar in the number of contrasts expressed by demonstratives. Only Lezgic languages seem to have consistently three-way contrast systems (except for Budukh, which features a two-way system).
+
+### Table 1. The number of distance contrasts expressed by demonstratives{#m1}
+
+|     |Number of languages|
+|-----|-----|
+|Two-way contrast|12|
+|Three-way contrast|21|
+
+In the languages of Daghestan, demonstrative systems with a three-way contrast are more common, whereas in general in the languages of the world systems expressing a two-way contrast are the most frequent option (see a similar map made by [@diessel2013] for WALS). 
+
+According to Anderson and Keenan’s approach, only systems that distinguish three (or more) ways of contrast are divided into distal- or person-oriented types. Note that two-way contrast systems can also have demonstratives defined relative to different deictic centers. In the sample, there are 4 such languages: Akhvakh, Chamalal, Tindi and Lak. In these languages, demonstratives express two-way contrast, but they are described relative to two deictic centers (i.e. **this, in the speaker’s domain** and **this, in the hearer’s domain**), thus they are polycentric. 
+
+[^1]: In this paper I refer to demonstratives of both mono- and polycentric systems that mark a three-way contrast as proximal, medial and distal and those that express a two-way contrast as proximal and non-proximal.
+
+[^2]: The demonstrative *yz* is described as ‘aforementioned’ and it is mainly used anaphorically as the third person pronoun. But historically it is developed from the medial demonstrative [@nichols2011: 658]. The same seems to be true for Chechen [@nichols1994: 34].

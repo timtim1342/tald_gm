@@ -1,0 +1,60 @@
+## Elevation
+
+Besides distance contrast, demonstrative systems can additionally distinguish elevation and have special stems meaning above or below the deictic center. Elevation can be expressed by independent pronouns, as in Archi (see [Table 1](#m1)), or by an affix attaching to the demonstrative stem, as in Tindi (see [Table 2](#m2)). When elevation is expressed by affixes, the location at the level of the deictic center is usually also marked.
+
+### Table 1. Archi demonstratives [@kibrik1977: 124] {#m1}
+
+|proximal|medial|distal|above|below|
+|-----|-----|----|--|--|
+|*ja-*|*jamu-*|*to-*|*ʀodo-*|*godo-*|
+
+### Table 2. Tindi demonstratives [@magomedova2003: 558][^1] {#m2}
+
+||proximal|non proximal|
+|-----|-----|----|
+|at the same level|*a-ja-* (< *ada-*)|*o-ja-* (< *oda-*)|
+|above|*a-ɬa-*|*o-ɬa-*|
+|below|*a-ɟa-*|*o-ɟa-*|
+
+Demonstrative systems like Archi, that have independent pronouns for expressing elevation, can have separate stems for each spatial meaning (as in Archi) or can express some of them together by one stem. E.g. Agul demonstrative le is used as both medial, as in (@one), and above, as in (@two), demonstratives.[^2] In [Table 3](#m3), the Agul demonstrative system is presented.
+
+### Table 3. Agul demonstratives [@ganenkovetal2009: 15]{#m3}
+
+|proximal|medial/above|distal|below|
+|-----|-----|----|--|
+|*me-*|*le-*|*te-*|*ge-*|
+
+(@one) *le* used as the medial demonstrative. Agul [@ganenkovetal2009: 14]
+```{r}
+gloss_example("le fi e, fi e we χil.i-ʔ a-je-f?",
+              "DEML what COP what COP your hand-IN (N)be-PART-s",
+              "What is it, what is it in your hands?")
+```
+
+(@two) *le* used as the above demonstrative. Agul [@ganenkovetal2009: 14]
+```{r}
+gloss_example("le ʁ˳ad.i-l al-e ber faqšaw",
+              "DEML roof-SUPER (SUPER)be-PART shovel RE:bring(IMP)",
+              "Bring (here) that shovel on the roof.")
+```
+
+In languages with elevation affixes, the latter can usually be attached to every distance stem, and thus they distinguish elevation relative to different deictic centers. 
+
+[Maps](elevation_map.html) show the presence of special demonstrative affixes or independent demonstratives with elevation meaning in a language. Among the sampled languages, almost half distinguish elevation by special demonstratives or affixes, see [Table 4](#m4). All Tsezic languages in the sample do not distinguish elevation. On the contrary, most Andic languages (except for Bagvalal) express elevation by special affixes.
+
+### Table 4. The presence of special demonstrative affixes or independent demonstratives with elevation meaning{#m4}
+
+|     |Number of languages|
+|-----|-----|
+|Distinguish elevation|15|
+|Do not distinguish elevation|18|
+
+[^1]:Note that Tindi demonstratives a- (proximal) and o- (distal) are also used without the elevation affixes -d, -ɬ, -ɟ.
+
+[^2]:In my sample there is only one such language.
+
+## List of glosses
+
+```{r}
+make_gloss_list()
+```
