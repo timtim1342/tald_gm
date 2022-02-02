@@ -12,16 +12,16 @@ gloss_example("den henala **inku-j-č'a** **ida**",
 
 Current relevance is an umbrella-term subsuming several more specific meanings [@ritz2012: 882-883; @mccawley1971; @comrie1976]:
 
-- Resultative perfect -- <i>Patimat <b>has broken</b> her arm.</i> (the arm is now broken)
-- Continuative -- <i>Patimat <b>has lived</b> in the village for 40 years.</i> (and she still lives there)
-- Experiential -- <i>Patimat <b>has been</b> to Japan.</i> (at least once in her life)
-- “Hot news” perfect -- <i>Patimat <b>has</b> just <b>arrived</b>.</i>
+- Resultative perfect -- _Patimat **has broken** her arm._ (the arm is now broken)
+- Continuative -- _Patimat **has lived** in the village for 40 years._ (and she still lives there)
+- Experiential -- _Patimat **has been** to Japan._ (at least once in her life)
+- “Hot news” perfect -- _Patimat **has** just **arrived**._
 
 In this chapter I will use the term perfect to refer to verb forms with a current relevance function.
 
 Perfects are typically periphrastic forms [@bybeedahl1989: 56]. Common sources include resultative and completive constructions [@bybee1994: 105]. Only the former are relevant for the eastern Caucasus. Resultative constructions typically consist of (or derive from) a non-finite form with past or perfective semantics, and a stative auxiliary such as ‘be’ or ‘have’ with present tense reference [@bybee1994: 55--57].
 
-<b>Resultative constructions</b> render a present state as the result of a past action [@nedjalkovjaxontov1988: 6]. They form monovalent, stative predicates, as in example (@two), and are mostly restricted to change-of-state verbs.[^1]
+**Resultative constructions** render a present state as the result of a past action [@nedjalkovjaxontov1988: 6]. They form monovalent, stative predicates, as in example (@two), and are mostly restricted to change-of-state verbs.[^1]
 
 (@two) Avar [@verhees2018: 263]
 ```{r}
@@ -32,7 +32,7 @@ gloss_example("nuc'a (žegi) **qan** **b-ugo**",
 
 [^1]: In East Caucasian certain present states are always rendered with a resultative form of an inchoative verb, because the languages lack a stative lexeme. These states include certain postures (‘standing’, ‘lying down’) and physical states (‘sleeping’, ‘being sick’). The exact inventory of such predicates in individual languages, as well as the set shared across the branches of the family, remains a topic for future investigation.
 
-The <b>resultative perfect</b>, illustrated in example (@three), represents a more progressed stage of grammaticalization. In contrast to the resultative proper it maintains the argument structure of the original lexical verb [@plungian2016: 10]. The result is a less stative predicate that is incompatible with adverbs of unlimited duration like `r gloss_example("žegi", "still", intext = TRUE)`. Resultative proper and resultative perfect can be expressed by distinct constructions or with the same form.
+The **resultative perfect**, illustrated in example (@three), represents a more progressed stage of grammaticalization. In contrast to the resultative proper it maintains the argument structure of the original lexical verb [@plungian2016: 10]. The result is a less stative predicate that is incompatible with adverbs of unlimited duration like `r gloss_example("žegi", "still", intext = TRUE)`. Resultative proper and resultative perfect can be expressed by distinct constructions or with the same form.
 
 (@three) Avar [@verhees2018: 263]
 ```{r}

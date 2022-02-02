@@ -73,7 +73,7 @@ gloss_example("ina uwčːu x-unu-**kːar-a**",
               "You have **apparently** become drunk.")
 ```
 
-Particles marking general indirect evidentiality are attested in Karata and Kryz. The semantics of the Karata particle are unclear and require further investigation. Kryz borrowed the particle <i>-mIš</i> from Azerbaijani. Most likely this is a copy of the copular particle <i>-(i)mIš</i> and not of the perfect suffix <i>-mIš</i>, since the latter has lost the indirect evidential function (as discussed in chapter [Evidentiality in the tense system](evidentiality_tense.html)). In addition, the target form attaches to various inflected verb forms. In example (@seven), <i>-miš</i> indicates “non-direct evidence in the past”, see Authier [-@authier2010: 16]
+Particles marking general indirect evidentiality are attested in Karata and Kryz. The semantics of the Karata particle are unclear and require further investigation. Kryz borrowed the particle *-mIš* from Azerbaijani. Most likely this is a copy of the copular particle *-(i)mIš* and not of the perfect suffix *-mIš*, since the latter has lost the indirect evidential function (as discussed in chapter [Evidentiality in the tense system](evidentiality_tense.html)). In addition, the target form attaches to various inflected verb forms. In example (@seven), *-miš* indicates “non-direct evidence in the past”, see Authier [-@authier2010: 16]
 
 (@seven) Kryz: Alik [@authier2010: 16]
 ```{r}
